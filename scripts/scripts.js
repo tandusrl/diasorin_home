@@ -1,7 +1,21 @@
 /* SLIDER CANVAS */
 $(document).ready(function(){
     $('h2#dsComingSoon').delay(500).fadeIn(3000);
+    $('#dsSlider h5').delay(1500).fadeIn(5000);
 });
+
+$(document).ready(function(){
+
+setInterval(function() { 
+  $('#dsSlider > div:first')
+    .fadeOut(2000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#dsSlider');
+},  7000);
+});
+
 
 /* SIDE MENU */
 
@@ -99,3 +113,27 @@ $(document).ready(function(){
         $('dsPopUpApp').hide();
     });
 });
+
+/* ANIMATIONS 
+
+var heightWWP = Math.ceil($('#dsPresenceExt').height());
+var offsetWWP = Math.ceil($('#dsPresenceExt').offset().top) - $('#dsSlider').height();
+var top = Math.ceil($('#dsSlider').offset().top);
+console.log(heightWWP);
+offsetWWP += heightWWP / 2;
+console.log(offsetWWP);
+
+
+
+$(window).on('scroll', function() {
+    var scroll = $(this).scrollTop();
+
+    console.log(scroll);
+    if (scroll > offsetWWP) {
+        presenceFade();
+    }
+});
+
+function presenceFade() {
+    $('#dsPresenceContainer').fadeIn(1000);
+}*/

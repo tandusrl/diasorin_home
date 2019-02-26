@@ -18,9 +18,13 @@ body {
 
 * {
     font-family: 'Open Sans', Helvetica, sans-serif;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
+::selection {
+    color: #fff;
+    background-color: #003a79;
+}
 
 .upText {
     text-transform: uppercase;
@@ -46,8 +50,6 @@ body {
     }
 }
 
-
-
 .dsLink {
     color: #fff;
     background-color: #003a79;
@@ -71,6 +73,17 @@ body {
     margin: 0 auto;
     padding: 0 50px;
 }
+
+.super {
+    vertical-align: super;
+    font-size: 10px;
+}
+
+.superTitle {
+    vertical-align: super;
+    font-size: 16px;
+}
+
 /* 
 .menuContainer {
     width: 100%;
@@ -78,6 +91,11 @@ body {
     display: block;
     margin: 0 auto;
 } */
+
+/* ----- COOKIE LAW ----- */
+.cc-message {
+    font-size: 12px;
+}
 
 /* RESPONSIVITY MENUS - BREAKPOINT 1180PX */
 @media only screen and ( max-width: 1179px ) {
@@ -89,7 +107,7 @@ body {
 }
 
 
-/* MENU - DESKTOP */
+/* ----- MENU - DESKTOP ----- */
 
 #dsMenuWrapper {
     width: 100%;
@@ -185,7 +203,7 @@ ul.dsMenuDesktop {
     background-color: #58b895;
 }
 
-/* MENU - MOBILE */
+/* -----  MENU - MOBILE ----- */
 
 #menuMobile {
     position: fixed;
@@ -255,6 +273,14 @@ ul#menuMobileList li {
     padding: 20px 0;
 }
 
+ul#menuMobileList li:hover {
+    background-color: #eee;
+}
+
+.menuMobileButton:hover {
+    background-color: #003a79 !important;
+}
+
 ul#menuMobileList li a {
     color: #003a79;
 }
@@ -287,30 +313,51 @@ li.menuMobileButton a {
     background-color: rgba(0,58,121,.5);
 }
 
-/* SLIDER */
+/* ----- SLIDER ----- */
 
 #dsSlider {
-    /* width: 100%; */
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    /* padding: 0 10%; */
-    background: url('../img/diasorin_diagnostic_specialists_coming_soon.jpg');
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#dsSlider .container {
-    margin: 0 !important;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    /* padding: 0 10%; */
 }
 
-@media only screen and ( max-width: 768px ) {
-    #dsSlider .container { justify-content: center; } 
+.dsSlide {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#dsSlide0 {
+    background-image: url('../img/diasorin_diagnostic_specialists_coming_soon.jpg');
+}
+
+#dsSlide1 {
+    background-image: url('../img/diasorin_diagnostic_specialists_coming_soon_2.jpg');
+} 
+
+#dsSlide2 {
+    background-image: url('../img/diasorin_diagnostic_specialists_coming_soon_3.jpg');
+} 
+
+.dsSlideOverlay {
+    background-color: rgba(0,0,0,.5);
+}
+
+#dsSlider .container {
+    /* margin: 0 !important; */
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #dsSlider h2 {
@@ -319,8 +366,16 @@ li.menuMobileButton a {
     margin: 0;
     font-weight: 400;
     letter-spacing: 3px;
-    text-align: center;
+    text-align: left;
 }
+
+@media only screen and ( max-width: 768px ) {
+    #dsSlider .container { justify-content: center; } 
+    #dsSlider h2 {
+        text-align: center;
+    }
+}
+
 
 #dsDisclaimerDiv {
     position: absolute;
@@ -336,20 +391,44 @@ li.menuMobileButton a {
     padding: 0 5px;
 }
 
+
+#dsLiaisonLogo {
+    width: 300px;
+    display: block;
+    margin: 0;
+}
+
+
 @media only screen and ( max-height: 425px ) {
     #dsSlider h5 {
         font-size: 7px;
     }
 }
 
+@media only screen and ( max-width: 425px ) {
+    #dsSlide2 h2 {
+        font-size: 28px !important;
+    }
+}
+
 @media only screen and ( max-width: 768px ) {
     #dsSlider {
-        background: url('../img/diasorin_diagnostic_specialists_coming_soon_s.jpg') no-repeat;
-        background-size: cover;
-        background-position: center center;
         justify-content: center;
         padding: 0;
         flex-wrap: wrap;
+    }
+
+    #dsSlide0 { background-image: url('../img/diasorin_diagnostic_specialists_coming_soon_s.jpg'); }
+    #dsSlide1 { background-image: url('../img/diasorin_diagnostic_specialists_coming_soon_2s.jpg'); }
+    #dsSlide2 {
+        background-image: url('../img/diasorin_diagnostic_specialists_coming_soon_3s.jpg');
+        background-size: contain;
+    }
+
+    .dsSlide {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
     #dsDisclaimerDiv {
@@ -361,9 +440,18 @@ li.menuMobileButton a {
         text-align: center;
     }
 
+    #dsLiaisonLogo {
+        margin: 0 auto;
+        width: 200px;
+    }
+
 }
 
-/* DESCRIPTION */
+.dsSliderWrapper {
+    background-color: rgba(0,0,0,.5);
+}
+
+/* ----- DESCRIPTION -----*/
 
 #dsDescription {
     text-align: center;
@@ -394,7 +482,7 @@ li.menuMobileButton a {
     margin: 0 auto;
 }
 
-/* CLINICAL AREAS */
+/* ----- CLINICAL AREAS ----- */
 
 #dsCAContainer {
     background: url('../img/diasorin_clinical_areas.jpg') no-repeat;
@@ -404,25 +492,42 @@ li.menuMobileButton a {
 }
 
 #dsCAContainerGrad {
-    background-image: linear-gradient(to right, rgba(0,58,121,1) 0%, rgba(0,0,0,0) 50%);
+    background-image: linear-gradient(to left, rgba(0,58,121,1) 0%, rgba(0,0,0,0) 50%);
+    float: right;
+    width: 100%;
+}
+
+#dsCAContainerGrad .container {
+    height: inherit;
 }
 
 #dsCAContainerInner {
     height: 100%;
     display: flex;
     align-items: center;
+    float: right;
+}
+
+#dsCAContainerInner a {
+    float: right;
+    clear: right;
 }
 
 @media only screen and ( min-width: 900px ) {
     #dsCAContainerInner {
         width: 40%;
+        text-align: right;
     }
 }
 
-@media only screen and ( max-width: 768px ) {
+@media only screen and ( max-width: 899px ) {
+/* 
+    #dsCAContainer {
+        background-position-x: left;
+    } */
 
     #dsCAContainerGrad {
-        background-image: linear-gradient(to right, rgba(0,30,60,1) 0%, rgba(0,0,0,0) 100%);
+        background-image: linear-gradient(to left, rgba(0,30,60,1) 0%, rgba(0,0,0,0) 100%);
     }
 
     #dsCAContainerInner {
@@ -433,10 +538,11 @@ li.menuMobileButton a {
 
     #dsCAContainerInner a {
         margin: 0 auto;
+        float: none;
     }
 }
 
-/* MACHINES */
+/* ----- MACHINES ----- */
 
 .half {
     width: 50%;
@@ -448,7 +554,7 @@ li.menuMobileButton a {
 
 #dsMachines {
     width: 100%;
-    height: 75%;
+    min-height: 75%;
     display: flex;
     align-items: center;
 }
@@ -463,6 +569,14 @@ li.menuMobileButton a {
     #dsMachines {
         height: inherit;
     }
+}
+
+.dsMachinesContainer a h1 {
+    color: #003a79 !important;
+}
+
+.dsMachinesContainer .text {
+    margin-bottom: 20px !important;
 }
 
 #dsMachines .container {
@@ -483,12 +597,25 @@ li.menuMobileButton a {
     align-items: center;
 }
 
+#dsMachineryPicHolder {
+    overflow: hidden;
+}
+
 #dsMachinesImg {
     float: left;
 }
 
 .dsMachineryImg {
     width:100%;
+    transition: .25s;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .dsMachineryImg:hover {
+        transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        transition: .25s;
+    }
 }
 
 @media only screen and ( max-width: 768px ) {
@@ -496,7 +623,7 @@ li.menuMobileButton a {
     #dsMachinesInner { padding: 10%; }
 }
 
-/* WORLDWIDE PRESENCE */
+/* ----- WORLDWIDE PRESENCE ----- */
 
 #dsPresenceExt {
     background-image: linear-gradient(135deg, #203b67 0%, #030339 100%);
@@ -512,6 +639,10 @@ li.menuMobileButton a {
     background-size: contain;
     background-position-x: right;
     /* max-width: 1080px; */
+}
+
+#dsPresenceContainer {
+    position: relative;
 }
 
 #dsPresenceInner {
@@ -542,7 +673,7 @@ li.menuMobileButton a {
 
 }
 
-/* NEWS */
+/* ----- NEWS ----- */
 
 #dsBlog {
     background: url('../img/diasorin_diagnostic_background.jpg') no-repeat;
@@ -574,12 +705,12 @@ li.menuMobileButton a {
     justify-content: space-around;
 }
 
-#blogLoop div a {
+#blogLoop div .blogPost {
     transition: .25s;
 }
 
-#blogLoop div a:hover {
-    background-color: #d8e2f3;
+#blogLoop div .blogPost:hover {
+    background-color: #fff;
     transition: .25s;
 }
 
@@ -589,7 +720,7 @@ li.menuMobileButton a {
 
 
 @media only screen and ( max-width: 1060px ) {
-    #blogLoop div a {
+    #blogLoop div .blogPost {
         width: 150px !important;
         height: 150px !important;
     }
@@ -598,7 +729,7 @@ li.menuMobileButton a {
 @media only screen and ( max-width: 900px ) {
     #blogLoop { flex-wrap: wrap; }
 
-    #blogLoop div a {
+    #blogLoop div .blogPost {
         width: 250px !important;
         height: 250px !important;
         margin: 20px 0;
@@ -608,28 +739,29 @@ li.menuMobileButton a {
 @media only screen and ( max-width: 685px ) {
     #blogLoop, #blogLoop > div { width: 100% !important; }
 
-    #blogLoop div a {
+    #blogLoop div .blogPost {
         height: 220px !important;
         margin: 20px 0;
         padding: 0 !important;
         width: 100% !important;
     }
 
-    #blogLoop div a div {
+    #blogLoop div .blogPost div {
         padding: 20px;
         margin: 0;
     }
 
 }
 
-#blogLoop div a {
+#blogLoop div .blogPost {
     display: inline-block;
     width: 200px;
     height: 200px;
     box-shadow: 0 0 20px #aaa;
     padding: 20px;
-    background-color: #fff;
+    background-color:rgba(255,255,255,.8);
     color:#000;
+    /* cursor: pointer; */
 }
 
 #dsLinkBlog {
@@ -641,7 +773,7 @@ li.menuMobileButton a {
     margin-bottom: 20px;
 }
 
-/* FOOTER */
+/* ----- FOOTER ----- */
 
 footer {
     background-color: #003a79;
@@ -683,7 +815,15 @@ footer {
 }
 
 @media only screen and ( max-width: 768px ) {
-    .footerLinks  { width: 100%; }
+    .footerLinks  {
+        width: 100%; 
+    }
+}
+
+@media only screen and ( max-width: 375px ) {
+    .footerLinks  {
+        max-width: 150px;
+    }
 }
 
 .footerLinks:hover  {
@@ -810,7 +950,7 @@ img.dsPopupStore {
     margin: 10px 0;
 }
 
-/* SOCKET */
+/* ----- SOCKET -----*/
 
 #dsSocket {
     height: 100px;
