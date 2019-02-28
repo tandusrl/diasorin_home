@@ -981,40 +981,8 @@ img.dsPopupStore {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    font-size: 12px;
-}
-
-#dsSocketContainer {
-    max-width: 1280px;
-    width: 100%;
-    display: flex;
-}
-
-#dsSocket_1, #dsSocket_3 {
-    width: 25%;
-}
-
-#dsSocket_2 {
-    width: 50%;
 }
 
 #dsSocket img {
     width: 180px;
-}
-
-#dsSocket a {
-    cursor: pointer;
-}
-
-@media only screen and ( max-width: 768px ) {
-    #dsSocket, #dsSocketContainer {
-        height: auto;
-        display: block;
-    }
-
-    #dsSocket_1, #dsSocket_2, #dsSocket_3 {
-        width: 100%;
-        padding: 15px 0;
-    }
 }

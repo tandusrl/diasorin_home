@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="shortcut icon" href="https://www.diasorin.com/sites/all/themes/diasorin_restyle/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta property="og:title" content="DiaSorin - The Diagnostic Specialist">
@@ -38,17 +40,6 @@
         "text": "#003a79"
         }
     },
-    // "cookie": {
-    //     "name": "cookie-agreed",
-    //     "domain": "www.diasorin.com"
-    // },
-    // "cookieconsent": {
-    //     "status": {
-    //     "deny": "deny",
-    //     "dismiss": "2",
-    //     "allow": "2"
-    //     }
-    // },
     "position": "top",
     "content": {
         "message": "This Site uses cookies, which could include third-party cookies, to ensure its technical functioning and analyse visitor information in aggregate form. \nBy closing this banner, selecting any link or continuing to browse by accessing any other sections of this Site, you consent to the use of cookies.",
@@ -111,179 +102,177 @@
                             <li class="menuMobileButton" id="catalogMenu"><a href="http://catalog.diasorin.com/en/disclaimer">Catalog</a></li>
                             <li class="menuMobileButton" id="dialogMenu"><a href="http://assayinfo.diasorin.com/Account/Login?ReturnUrl=%2f">Dialog</a></li>
                         </ul>
-                    </div>
-            <div id="menuMobileOverlay"></div></div>
-        <div id="dsSlider">
-            <div class="dsSlide" data-slide="0" id="dsSlide0">
-                <div class="dsSlideOverlay">
-                    <div class="container">
-                        <div class="upText">
-                            <h2 id="dsComingSoon" style="display: none;">Coming Soon</h2>
-                            <div id="dsDisclaimerDiv">
-                                <h5 style="display: none;">For outside the US and Canada only<br/>Product availability to required regulatory approvals</h5>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="dsSlide" data-slide="1" id="dsSlide1" style="display: none;">
-                <div class="dsSlideOverlay">
-                    <div class="container">
-                        <div class="upText">
-                            <h2 id="dsComingSoon" style="display: none;">A New Vision</h2>
-                            <div id="dsDisclaimerDiv">
-                                <h5 style="display: none;">For outside the US and Canada only<br/>Product availability to required regulatory approvals</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dsSlide" data-slide="2" id="dsSlide2" style="display: none;">
-                <div class="dsSlideOverlay">
-                    <div class="container">
-                        <div class="upText">
-                            <img src="img/diasorin_liason_logo.png" id="dsLiaisonLogo">
-                            <h2 id="dsComingSoon" style="display: none;">All our new Technology<br/> in a new dimension</h2>
-                            <div id="dsDisclaimerDiv">
-                                <h5 style="display: none;">For outside the US and Canada only<br/>Product availability to required regulatory approvals</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="menuMobileOverlay"></div>
         </div>
-        <div id="dsDescription">
-            <h1 class="upText">The Diagnostic Specialist</h1>
-            <div class="text"><p>We are global leader in the laboratory diagnostics market, specializing in the
-                    immunodiagnostics and molecular diagnostics segments. For over 50 years our Group has
-                    been developing, producing and commercializing diagnostic tests: we support clinical laboratory
-                    needs and activities, providing solutions that are reliable, innovative, fully automated and
-                    standardized. We continually invest in Research & Development, using our own distinctive
-                    expertise in the field to deliver a high level of innovation.</p></div>
-                <a href="https://www.diasorin.com/en/company" id="dsLinkCompany" class="upText dsLink">Our Company</a>
-        </div>
-        <div id="dsCAContainer" class="whiteText">
-            <div id="dsCAContainerGrad">
+        <section class="dsSection heightFS" >
+            <div id="dsSlider" class="heightFS" >
+                <div class="dsSlide" data-slide="0" id="dsSlide0" >
+                    <div class="dsSlideOverlay heightFS">
+                        <div class="container heightFS" >
+                            <div class="upText flexFS">
+                                <h2 id="dsComingSoon" style="display: none;">Coming Soon</h2>
+                                <div id="dsDisclaimerDiv">
+                                    <h5 style="display: none;">For outside the US and Canada only<br/>Product availability to required regulatory approvals</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dsSlide" data-slide="1" id="dsSlide1" style="display: none;" >
+                </div>
+                <div class="dsSlide" data-slide="2" id="dsSlide2" style="display: none;">
+                </div>
+            </div>
+        </section>
+        <section class="dsSection">
+            <div id="dsDescription" >
+                <div id="dsDescrAnim">
+                    <h1 class="upText">The Diagnostic Specialist</h1>
+                    <div class="text"><p>We are global leader in the laboratory diagnostics market, specializing in the
+                            immunodiagnostics and molecular diagnostics segments. For over 50 years our Group has
+                            been developing, producing and commercializing diagnostic tests: we support clinical laboratory
+                            needs and activities, providing solutions that are reliable, innovative, fully automated and
+                            standardized. We continually invest in Research & Development, using our own distinctive
+                            expertise in the field to deliver a high level of innovation.</p></div>
+                        <a href="https://www.diasorin.com/en/company" id="dsLinkCompany" class="upText dsLink">Our Company</a>
+                </div>
+            </div>
+        </section>
+        <section class="dsSection heightFS">
+            <div id="dsCAContainer" class="whiteText">
+                <div id="dsCAContainerGrad" class="heightFS">
+                    <div class="container">
+                        <div id="dsCAContainerInner">
+                            <div id="dsClinicalAreasContainer" >
+                                <h1 class="upText">Clinical Areas</h1>
+                                <div class="text">We offer the broadest range of specialty tests available in the immunodiagnostics market.</div>
+                                <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/clinical-areas" class="upText dsLink dsLinkAreas">Discover All Areas</a>
+                                <a href="http://www.diasorin.com/sites/default/files/allegati/menui_liaision_fam_coll_09.18.pdf" class="upText dsLink dsLinkAreas" target="_blank">Discover Our Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <section class="dsSection">
+            <div id="dsMachines">
                 <div class="container">
-                    <div id="dsCAContainerInner">
-                        <div id="dsClinicalAreasContainer">
-                            <h1 class="upText">Clinical Areas</h1>
-                            <div class="text">We offer the broadest range of specialty tests available in the immunodiagnostics market.</div>
-                            <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/clinical-areas" class="upText dsLink dsLinkAreas">Discover All Areas</a>
-                            <a href="http://www.diasorin.com/sites/default/files/allegati/menui_liaision_fam_coll_09.18.pdf" class="upText dsLink dsLinkAreas" target="_blank">Discover Our Menu</a>
+                    <div id="dsMachinesImg" class="half">
+                        <div id="dsMachineryPicHolder">
+                            <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems/clia-systems/liaisonr-xl"><img class="dsMachineryImg" data-img="0" src="img/diasorin_liaison_xl.jpg"/></a>
+                            <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems/clia-systems/liaisonr"><img class="dsMachineryImg" data-img="1" src="img/diasorin_liaison.jpg" style="display: none;"/></a>
+                        </div>
+                        <div id="dsMachinerySliderBullets">
+                            <a href="#" data-project="0" class="dsBullets activeBullet"><img src="img/diasorin_bullet.png"></a>
+                            <a href="#" data-project="1" class="dsBullets"><img src="img/diasorin_bullet.png"></a>
+                        </div>
+                    </div>
+                    <div id="dsMachinesText" class="half">
+                        <div id="dsMachinesInner">
+                            <div class="dsMachinesContainer" data-description="0">
+                                <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems/clia-systems/liaisonr-xl"><h1 class="upText">LIAISON<span class="superTitle">®</span> XL</h1></a>
+                                <div class="text">LIAISON<span class="super">®</span> XL is the fully automated chemiluminescence analyzer, performing complete sample
+                                        processing (sample pre-dilutions, sample and reagent dispensing, incubations, wash processes,
+                                        etc.) as well as measurement and evaluation.
+                                        The innovative features of the system allow LIAISON<span class="super">®</span> XL to improve efficiency in the
+                                        immunoassay laboratories: fully automated solution, quality of results, flexible configuration,
+                                        high efficiency.</div>
+                                <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems" id="dsLinkAreas" class="upText dsLink">Discover All Systems</a>
+                            </div>
+                            <div class="dsMachinesContainer" data-description="1" style="display: none;">
+                                <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems/clia-systems/liaisonr"><h1 class="upText">LIAISON<span class="superTitle">®</span></h1></a>
+                                <div class="text">The LIAISON<span class="super">®</span> Analyzer combines a flexible operating module with a broad menu of assays
+                                        and leads to high efficiency due to its long walk-away time. The possibility to run up to 15
+                                        different assays at a time provides rational everyday testing even with a small number of
+                                        samples. The LIAISON<span class="super">®</span> Analyzer is easy to use due to its touch-screen monitor, clear software
+                                        structure and reagent Integral which contains all assay-specific reagents.</div>
+                                <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems" id="dsLinkAreas" class="upText dsLink">Discover All Systems</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+        <section class="dsSection">
+            <div id="dsPresenceExt">
+                <div id="dsPresence" class="whiteText">
+                    <div class="container">
+                        <div id="dsPresenceInner">
+                            <div id="dsPresenceContainer">
+                                <h1 class="upText">Worldwide Presence</h1>
+                                <div class="text">Our Group consists of 24 companies and 5 foreign branches, with offices across 5 continents and manufacturing premises producing its tests in 6 sites around the world.</div>
+                                <a href="https://www.diasorin.com/en/company/worldwide-contacts" class="upText dsLink dsLinkAreas">Where we are</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>  
-        <div id="dsMachines">
-            <div class="container">
-                <div id="dsMachinesImg" class="half">
-                    <div id="dsMachineryPicHolder">
-                        <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems/clia-systems/liaisonr-xl"><img class="dsMachineryImg" data-img="0" src="img/diasorin_liaison_xl.jpg"/></a>
-                        <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems/clia-systems/liaisonr"><img class="dsMachineryImg" data-img="1" src="img/diasorin_liaison.jpg" style="display: none;"/></a>
-                    </div>
-                    <div id="dsMachinerySliderBullets">
-                        <a href="#" data-project="0" class="dsBullets activeBullet"><img src="img/diasorin_bullet.png"></a>
-                        <a href="#" data-project="1" class="dsBullets"><img src="img/diasorin_bullet.png"></a>
-                    </div>
-                </div>
-                <div id="dsMachinesText" class="half">
-                    <div id="dsMachinesInner">
-                        <div class="dsMachinesContainer" data-description="0">
-                            <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems/clia-systems/liaisonr-xl"><h1 class="upText">LIAISON<span class="superTitle">®</span> XL</h1></a>
-                            <div class="text">LIAISON<span class="super">®</span> XL is the fully automated chemiluminescence analyzer, performing complete sample
-                                    processing (sample pre-dilutions, sample and reagent dispensing, incubations, wash processes,
-                                    etc.) as well as measurement and evaluation.
-                                    The innovative features of the system allow LIAISON<span class="super">®</span> XL to improve efficiency in the
-                                    immunoassay laboratories: fully automated solution, quality of results, flexible configuration,
-                                    high efficiency.</div>
-                            <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems" id="dsLinkAreas" class="upText dsLink">Discover All Systems</a>
-                        </div>
-                        <div class="dsMachinesContainer" data-description="1" style="display: none;">
-                            <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems/clia-systems/liaisonr"><h1 class="upText">LIAISON<span class="superTitle">®</span></h1></a>
-                            <div class="text">The LIAISON<span class="super">®</span> Analyzer combines a flexible operating module with a broad menu of assays
-                                    and leads to high efficiency due to its long walk-away time. The possibility to run up to 15
-                                    different assays at a time provides rational everyday testing even with a small number of
-                                    samples. The LIAISON<span class="super">®</span> Analyzer is easy to use due to its touch-screen monitor, clear software
-                                    structure and reagent Integral which contains all assay-specific reagents.</div>
-                            <a href="https://www.diasorin.com/en/immunodiagnostic-solutions/systems" id="dsLinkAreas" class="upText dsLink">Discover All Systems</a>
-                        </div>
-                        </div>
-                    </div>
-                </div> 
-            </div> 
-        <div id="dsPresenceExt">
-            <div id="dsPresence" class="whiteText">
+        </section>
+        <section class="dsSection">
+            <div id="dsBlog">
                 <div class="container">
-                    <div id="dsPresenceInner">
-                        <div id="dsPresenceContainer">
-                            <h1 class="upText">Worldwide Presence</h1>
-                            <div class="text">Our Group consists of 24 companies and 5 foreign branches, with offices across 5 continents and manufacturing premises producing its tests in 6 sites around the world.</div>
-                            <a href="https://www.diasorin.com/en/company/worldwide-contacts" class="upText dsLink dsLinkAreas">Where we are</a>
+                    <h1 class="upText">News</h1>
+                    <div id="blogLoop">
+                        <div>
+                            <div class="blogPost">
+                                <div class="blogDate">01/31/2019</div>
+                                <div class="blogDescr text">DiaSorin launches FDA-Cleared LIAISON<span class="super">®</span> Calprotectin test in the US market</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="blogPost">
+                                <div class="blogDate">09/17/2018</div>
+                                <div class="blogDescr text">DiaSorin launches the new LIAISON<span class="super">®</span> QUANTIFERON<span class="super">®</span>-TB GOLD PLUS ASSAY as an aid for latent tuberculosis</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="blogPost">
+                                <div class="blogDate">08/27/2018</div>
+                                <div class="blogDescr text">DiaSorin launches Hepatitis Delta (Hdv) test on LIAISON<span class="super">®</span> XL platform</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="blogPost">
+                                <div class="blogDate">05/23/2017</div>
+                                <div class="blogDescr text">DiaSorin launches the new LIAISON<span class="super">®</span> SHBG test for the diagnosis of androgen-related disorders</div>
+                            </div>
                         </div>
                     </div>
+                    <a href="https://www.diasorin.com/en/prodotti/news" id="dsLinkBlog" class="upText dsLink">All News</a>
                 </div>
             </div>
-        </div>
-        <div id="dsBlog">
-            <div class="container">
-                <h1 class="upText">News</h1>
-                <div id="blogLoop">
-                    <div>
-                        <div class="blogPost">
-                            <div class="blogDate">01/31/2019</div>
-                            <div class="blogDescr text">DiaSorin launches FDA-Cleared LIAISON<span class="super">®</span> Calprotectin test in the US market</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="blogPost">
-                            <div class="blogDate">09/17/2018</div>
-                            <div class="blogDescr text">DiaSorin launches the new LIAISON<span class="super">®</span> QUANTIFERON<span class="super">®</span>-TB GOLD PLUS ASSAY as an aid for latent tuberculosis</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="blogPost">
-                            <div class="blogDate">08/27/2018</div>
-                            <div class="blogDescr text">DiaSorin launches Hepatitis Delta (Hdv) test on LIAISON<span class="super">®</span> XL platform</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="blogPost">
-                            <div class="blogDate">05/23/2017</div>
-                            <div class="blogDescr text">DiaSorin launches the new LIAISON<span class="super">®</span> SHBG test for the diagnosis of androgen-related disorders</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://www.diasorin.com/en/prodotti/news" id="dsLinkBlog" class="upText dsLink">All News</a>
-            </div>
-        </div>
+        </section>
 
         <footer class="whiteText">
             <div class="container">
                 <div id="dsFooter">
                     <div id="dsFooterOne" class="footerThird">
-                        <h2>CONTACTS</h2>
-                        <div id="dsContactContainer">
-                            <div class="contacts"><h3>Headquarter</h3>Via Crescentino Snc<br/>13040 Saluggia (VC)<br/>Centralino<br/>Tel. +39 0161 487.1</div>
-                            <div class="contacts"><h3>Marketing</h3>Tel. +39 0161 487.1<br/><a class="whiteText" href="mailto:marketing@diasorin.it">marketing@diasorin.it</a></div>
-                        </div>
+                        
+                            <h2>CONTACTS</h2>
+                            <div id="dsContactContainer">
+                                <div class="contacts"><h3>Headquarter</h3>Via Crescentino Snc<br/>13040 Saluggia (VC)<br/>Centralino<br/>Tel. +39 0161 487.1</div>
+                                <div class="contacts"><h3>Marketing</h3>Tel. +39 0161 487.1<br/><a class="whiteText" href="mailto:marketing@diasorin.it">marketing@diasorin.it</a></div>
+                            </div>
+                        
                     </div>
                     <div id="dsFooterTwo" class="footerThird">
+                        
                             <h2>DISCOVER</h2>
                             <div>
-                            <div class="upText footerLinks" href="#" id="appPopup">DiaSorin App for laboratories</div>
-                            <a class="upText footerLinks" href="https://www.diasorin.com/en/immunodiagnostic-solutions/new-labelling">New Labeling & Packaging</a>
-                            <div id="dsPopupOverlay" style="display: none;">
-                                <div id="dsPopUpApp">
-                                    <div id="dsPopupClose">CLOSE</div>
-                                    <div id="dsPopUpAppInner">
-                                        <a href="https://play.google.com/store/apps/details?id=it.e_gate.diasorin&hl=it" target="_blank"><img src="img/ds_playstore.png" class="dsPopupStore"></a>
-                                        <a href="https://itunes.apple.com/it/app/d-app/id931936203?mt=8" target="_blank"><img src="img/ds_appstore.png" class="dsPopupStore"></a>
-                                </div>  
+                                <div class="upText footerLinks" href="#" id="appPopup">DiaSorin App for laboratories</div>
+                                <a class="upText footerLinks" href="https://www.diasorin.com/en/immunodiagnostic-solutions/new-labelling">New Labeling & Packaging</a>
+                                <div id="dsPopupOverlay" style="display: none;">
+                                    <div id="dsPopUpApp">
+                                        <div id="dsPopupClose">CLOSE</div>
+                                        <div id="dsPopUpAppInner">
+                                            <a href="https://play.google.com/store/apps/details?id=it.e_gate.diasorin&hl=it" target="_blank"><img src="img/ds_playstore.png" class="dsPopupStore"></a>
+                                            <a href="https://itunes.apple.com/it/app/d-app/id931936203?mt=8" target="_blank"><img src="img/ds_appstore.png" class="dsPopupStore"></a>
+                                        </div>  
+                                    </div>
                                 </div>
                             </div>
-                            </div>
+                        
                     </div>
                     <div id="dsFooterThree" class="footerThird">
                         <div id="dsFooterReferences">
@@ -294,17 +283,21 @@
                 </div>
             </div>
             <div id="dsSocket">
-                <a href="https://www.diasorin.com/en" id="dsLinkBlog" class="upText"><img src="img/diasorin_socket_logo.png"></a>
+                <div id="dsSocketContainer">
+                    <div id="dsSocket_1">
+                        <a href="https://www.diasorin.com/en/privacy-policy">Privacy Policy</a><br/>
+                        <a href="https://www.diasorin.com/en/legal-notices">Legal Notices</a><br/>
+                        <a href="http://www.diasorin.com/sites/default/files/allegati/modern_slavery_act_transparency_statement.pdf">Modern Slavery Act Statement</a>
+                    </div>
+                    <div id="dsSocket_2">DiaSorin S.p.A. - Capitale Sociale €55.948.257 R.E.A. 180729<br/>
+                            Fiscal Code and Subscription to Vercelli Companies Register no 13144290155</div>
+                    <div id="dsSocket_3"><a href="https://www.diasorin.com/en" id="dsLinkBlog" class="upText"><img src="img/diasorin_socket_logo.png"></a></div>
+                </div>  
             </div>
         </footer>
     </div>
 </body>
 <script src="scripts/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <script src="scripts/scripts.js"></script>
-
 </html>
-
-
-
-
-
