@@ -6,14 +6,33 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
- setInterval(function() { 
-    $('#dsSlider > div:first')
-      .fadeOut(2000)
-      .next()
-      .fadeIn(2000)
-      .end()
-      .appendTo('#dsSlider');
-  },  7000);
+    var currentSlide = 0;
+    var interval = null;
+
+    interval = setInterval(nextSlide, 7000);
+
+    $('#sliderBullets a').click(function(e) {
+        e.preventDefault();
+        currentSlide = $(this).data('slide');
+        clearInterval(interval);
+        interval = setInterval(nextSlide, 7000);
+        nextSlide(currentSlide);
+    });
+
+    function nextSlide(index) {
+        if (index != null){
+            currentSlide = index;
+        } else {
+            currentSlide += 1;
+            currentSlide = currentSlide % 3;
+        }
+
+        $('.dsSlide').fadeOut(1000);
+        $('.dsSlide[data-slide="' + currentSlide + '"]').fadeIn(1000);            
+
+        $('#sliderBullets a').removeClass('current');
+        $('#sliderBullets a[data-slide="' + currentSlide + '"]').addClass('current');
+    }
 });
 
 
