@@ -50,10 +50,6 @@ body {
     .text {
         font-size: 14px;
     }
-
-    .flexFS {
-        align-items: baseline
-    }
 }
 
 @media only screen and ( max-height: 425px ) {
@@ -109,7 +105,14 @@ body {
     font-size: 12px;
 }
 
+/* RESPONSIVITY MENUS - BREAKPOINT 1180PX */
+@media only screen and ( max-width: 1179px ) {
+    #menuCenter, #menuRight { display: none; }
+}
 
+@media only screen and ( min-width: 1180px ) {
+    #menuMobile, #menuMobileActive, #menuMobileClose { display: none; }
+}
 
 
 /* ----- MENU - DESKTOP ----- */
@@ -120,7 +123,7 @@ body {
     justify-content: center;
     background: #fff;
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
 }
 
 #dsMenu_desktop {
@@ -130,7 +133,7 @@ body {
     background-color: #fff;
     display: flex;
     align-items: center;
-    /* max-width: 1360px; */
+    max-width: 1360px;
     /* border-bottom: 1px solid #003a79; */
 }
 
@@ -180,7 +183,7 @@ ul.dsMenuDesktop {
 
 #dsMenuElements ul.dsMenuDesktop li a {
     display: block;
-    padding: 42px 15px;
+    padding: 42px 20px;
     color: #003a79;
     font-size: 12px;
 }
@@ -208,30 +211,6 @@ ul.dsMenuDesktop {
     background-color: #58b895;
 }
 
-#molecularTop, #corporateTop {
-    background-color: #003a79;
-}
-
-.topRightMenu {
-    font-size: 12px;
-}
-
-#disclaimerTop {
-    font-size: 8px;
-    text-align: right;
-    position: absolute;
-    right: 40px;
-    bottom: 10px;
-}
-
-#menuRightDisclaimer {
-    margin-right: 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 285px
-}
-
 /* -----  MENU - MOBILE ----- */
 
 #menuMobile {
@@ -243,7 +222,7 @@ ul.dsMenuDesktop {
     right: -320px;
     top: 0;
     background-color: #fff;
-    z-index: 10000;
+    z-index: 999;
 }
 
 @media only screen and ( max-height: 425px ) {
@@ -307,7 +286,7 @@ ul#menuMobileList li:hover {
 }
 
 .menuMobileButton:hover {
-    background-color: #00254d !important;
+    background-color: #003a79 !important;
 }
 
 ul#menuMobileList li a {
@@ -342,23 +321,6 @@ li.menuMobileButton a {
     background-color: rgba(0,58,121,.5);
 }
 
-#disclaimerMobile {
-    font-size: 9px
-}
-
-#disclaimerMobile:hover {
-    background-color: #fff !important;
-}
-
-/* RESPONSIVITY MENUS - BREAKPOINT 1180PX */
-@media only screen and ( max-width: 1319px ) {
-    #menuCenter, #menuRight, #menuRightDisclaimer { display: none; }
-}
-
-@media only screen and ( min-width: 1320px ) {
-    #menuMobile, #menuMobileActive, #menuMobileClose { display: none; }
-}
-
 /* ----- SLIDER ----- */
 
 #dsSlider {
@@ -383,15 +345,8 @@ li.menuMobileButton a {
 }
 
 #dsSlide0 {
-    background-image: url('../img/diasorin_slide_1.jpg');
+    background-image: url('../img/diasorin_diagnostic_specialists_coming_soon.jpg');
     background-color: #000;
-    background-position-x: right
-}
-
-@media only screen and ( orientation:portrait ) {
-    #dsSlide0 {
-        background-image: url('../img/diasorin_slide_1v.jpg');
-    }  
 }
 
 #dsSlide1 {
@@ -399,19 +354,6 @@ li.menuMobileButton a {
     background-size: contain;
     background-color: #e6e6de;
 } 
-
-@media only screen and ( orientation:portrait ) {
-    #dsSlide1 {
-        background-image: url('../img/diasorin_slide_2v.jpg');
-        margin-top: 100px;
-    }  
-}
-
-@media only screen and ( orientation:portrait ) and (max-width: 425px) {
-    #dsSlide1 {
-        margin-top: 50px;
-    }  
-}
 
 #dsSlide2 {
     background-image: url('../img/diasorin_slide_3.jpg');
@@ -431,22 +373,12 @@ li.menuMobileButton a {
     align-items: center;
 }
 
-@media only screen and ( orientation: portrait ) and (max-width: 768px) {
-    #dsSlider .container {
-        align-items: flex-start;
-    }
-
-    #dsSlider .flexFS {
-        margin-top: 33%
-    }
-}
-
 #dsSlider h2 {
     color: #fff;
     font-size: 48px !important;
     margin: 0;
     font-weight: 400;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     text-align: left;
 }
 
