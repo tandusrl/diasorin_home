@@ -36,7 +36,7 @@ $(document).ready(function(){
 });
 
 
-/* SIDE MENU */
+/* ---- SIDE MENU ---- */
 
 $(document).ready(function(){
     $('#menuMobileActive').on('click', function(e){
@@ -78,6 +78,49 @@ function normalMenu(){
         width: '100px',
     });
 }
+
+/* ---- GROUP MENU ---- */
+
+var stateD = true;
+var stateM = true;
+
+$('#dsGroupMenu').on('click', function(e){
+    if ( stateD ) {
+            $('#dsMenuWrapper').animate({
+                top: '0'
+            });
+            $('img#arrow').animate({
+                transform: 'rotateZ(180deg)'
+            });
+        } else {
+            $('#dsMenuWrapper').animate({
+                top: '-300px'
+            });
+            $('img#arrow').animate({
+                transform: 'rotateZ(0deg)'
+        });
+    }
+    stateD = !stateD;
+});
+
+$('#dsGroupMenuMobile').on('click', function(e){
+    if ( stateM ) {
+            $('#dsMenuWrapper').animate({
+                top: '0'
+            });
+            $('img#arrow').animate({
+                transform: 'rotateZ(180deg)'
+            });
+        } else {
+            $('#dsMenuWrapper').animate({
+                top: '-70vh'
+            });
+            $('img#arrow').animate({
+                transform: 'rotateZ(0deg)'
+        });
+    }
+    stateM = !stateM;
+});
 
 // $(window).on('scroll', function() {
 //       var scroll = $(this).scrollTop();

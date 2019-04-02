@@ -67,6 +67,28 @@
 <body>
     <div id="main">
         <div id="dsMenuWrapper">
+            <div id="dsGroupMenu" class="dsGroupMenu">
+                <div class="dsGroupSites">
+                    <a class="dsSite dsGroupLink" href="https://diasoringroup.com/" target="_blank">
+                        <span>DiaSorin Group</span>
+                        <img src="img/ds_group_b.png" style="display: none">
+                    </a>    
+                    <a class="dsSite dsMolLink" href="https://molecular.diasorin.com/international/" target="_blank" id="dsMolLink">
+                        <img src="img/ds_molecular_b.png" style="display: none">
+                        <span>DiaSorin Molecular</span>
+                    </a>
+                </div>
+                <div class="dsGroupToggle"><img id="arrow" src="img/ds_arrow.png"></a> Group Websites</div>
+            </div>
+            <div id="dsGroupMenuMobile" class="dsGroupMenu" style="display: none">
+                    <div class="dsGroupSites">
+                            <a class="dsSite dsGroupLink" href="https://diasoringroup.com/" target="_blank" id="dsGroupLink">
+                                <span>DiaSorin Group</span></a>
+                            <a class="dsSite dsMolLink" href="https://molecular.diasorin.com/international/" target="_blank" id="dsMolLink">
+                                <span>DiaSorin Molecular</span></a>
+                        </div>
+                    <div class="dsGroupToggle"><img id="arrow" src="img/ds_arrow.png"></a> Group Websites</div>
+                </div>
             <div id="dsMenu_desktop" class="upText">
                 <div id="dsLogo">
                     <a href="https://www.diasorin.com/en/" ><img src="img/diasorin_logo.jpg"></a>
@@ -84,8 +106,6 @@
                     <ul id="menuRight">
                         <li class="menuButton" id="catalogMenu"><a href="http://catalog.diasorin.com/en/disclaimer">Catalog</a></li>
                         <li class="menuButton" id="dialogMenu"><a href="http://assayinfo.diasorin.com/Account/Login?ReturnUrl=%2f">Dialog</a></li>
-                        <li id="molecularTop" class="menuButton"><a href="https://molecular.diasorin.com/international/" target="_blank">Diasorin Molecular</a></li>
-                        <li id="corporateTop" class="menuButton"><a href="https://diasoringroup.com/" target="_blank">Diasorin Corporate</a></li>
                         <li id="disclaimerTop" class="topRightMenu" style="position: absolute; right: 40px" >Corporate documents (Ethic Code, Privacy Policy and Legal note) available on DiaSorin Corporate</li>
                     </ul>
                     
@@ -106,8 +126,6 @@
                         <li><a href="https://www.diasorin.com/en/educational/clinical-areas">Educational</a></li>
                         <li class="menuMobileButton" id="catalogMenu"><a href="http://catalog.diasorin.com/en/disclaimer">Catalog</a></li>
                         <li class="menuMobileButton" id="dialogMenu"><a href="http://assayinfo.diasorin.com/Account/Login?ReturnUrl=%2f">Dialog</a></li>
-                        <li class="menuMobileButton" id="molecularTop" ><a href="https://molecular.diasorin.com/international/" target="_blank">Diasorin Molecular</a></li>
-                        <li class="menuMobileButton" id="corporateTop" ><a href="https://diasoringroup.com/" target="_blank">Diasorin Corporate</a></li>
                         <li class="topRightMenu" id="disclaimerMobile" style="padding: 10px 20px">Corporate documents (Ethic Code, Privacy Policy and Legal note) available on DiaSorin Corporate</li>
                     </ul>
                 </div>
@@ -260,51 +278,54 @@
         <footer class="whiteText">
             <div class="container">
                 <div id="dsFooter">
-                    <div id="dsFooterOne" class="footerThird">
-                        
-                            <h2>CONTACTS</h2>
-                            <div id="dsContactContainer">
-                                <div class="contacts"><h3>Headquarter</h3>Via Crescentino Snc<br/>13040 Saluggia (VC)<br/>Centralino<br/>Tel. +39 0161 487.1</div>
-                                <div class="contacts"><h3>Marketing</h3>Tel. +39 0161 487.1<br/><a class="whiteText" href="mailto:marketing@diasorin.it">marketing@diasorin.it</a></div>
-                            </div>
-                        
-                    </div>
-                    <div id="dsFooterTwo" class="footerThird">
-                        
-                            <h2>DISCOVER</h2>
-                            <div>
-                                <div class="upText footerLinks" href="#" id="appPopup">DiaSorin App for laboratories</div>
-                                <a class="upText footerLinks" href="https://www.diasorin.com/en/immunodiagnostic-solutions/new-labelling">New Labeling & Packaging</a>
-                                <div id="dsPopupOverlay" style="display: none;">
-                                    <div id="dsPopUpApp">
-                                        <div id="dsPopupClose">CLOSE</div>
-                                        <div id="dsPopUpAppInner">
-                                            <a href="https://play.google.com/store/apps/details?id=it.e_gate.diasorin&hl=it" target="_blank"><img src="img/ds_playstore.png" class="dsPopupStore"></a>
-                                            <a href="https://itunes.apple.com/it/app/d-app/id931936203?mt=8" target="_blank"><img src="img/ds_appstore.png" class="dsPopupStore"></a>
-                                        </div>  
-                                    </div>
+                    <div id="dsFooterOne" class="footerFourth">
+                        <h2>Discover</h2>
+                        <div>
+                            <div class="upText footerLinks" href="#" id="appPopup">DiaSorin App for laboratories</div>
+                            <a class="upText footerLinks" href="https://www.diasorin.com/en/immunodiagnostic-solutions/new-labelling">New Labeling & Packaging</a>
+                            <div id="dsPopupOverlay" style="display: none;">
+                                <div id="dsPopUpApp">
+                                    <div id="dsPopupClose">CLOSE</div>
+                                    <div id="dsPopUpAppInner">
+                                        <a href="https://play.google.com/store/apps/details?id=it.e_gate.diasorin&hl=it" target="_blank"><img src="img/ds_playstore.png" class="dsPopupStore"></a>
+                                        <a href="https://itunes.apple.com/it/app/d-app/id931936203?mt=8" target="_blank"><img src="img/ds_appstore.png" class="dsPopupStore"></a>
+                                    </div>  
                                 </div>
                             </div>
-                        
-                    </div>
-                    <div id="dsFooterThree" class="footerThird">
-                        <div id="dsFooterReferences">
-                            <div><a href="https://molecular.diasorin.com/international/">Diasorin Molecular</a></div>
-                            <div><a href="https://diasoringroup.com/">Diasorin Corporate</a></div>
                         </div>
+                    </div>
+                    <div id="dsFooterTwo" class="footerFourth">
+                        <h2>Contacts</h2>
+                    </div>
+                    <div id="dsFooterThree" class="footerFourth">
+                            <div class="contacts"><h3>Headquarter</h3>Via Crescentino Snc<br/>13040 Saluggia (VC)<br/>Centralino<br/>Tel. +39 0161 487.1</div>
+                    </div>
+                    <div id="dsFooterFour" class="footerFourth">
+                            <div class="contacts"><h3>Marketing</h3>Tel. +39 0161 487.1<br/><a class="whiteText" href="mailto:marketing@diasorin.it">marketing@diasorin.it</a></div>
                     </div>
                 </div>
             </div>
             <div id="dsSocket">
                 <div id="dsSocketContainer">
                     <div id="dsSocket_1">
+                        <div id="dsFooterReferences">
+                            <div><a href="https://diasoringroup.com/" id="dsSocketGroup" class="dsSocketLink" target="_blank">Diasorin Group</a></div>
+                            <div><a href="https://molecular.diasorin.com/international/" id="dsSocketMolecular" class="dsSocketLink" target="_blank">Diasorin Molecular</a></div>
+                        </div>
+                    </div>
+                    <div id="dsSocket_2">
                         <a href="https://www.diasorin.com/en/privacy-policy">Privacy Policy</a><br/>
                         <a href="https://www.diasorin.com/en/legal-notices">Legal Notices</a><br/>
                         <a href="http://www.diasorin.com/sites/default/files/allegati/modern_slavery_act_transparency_statement.pdf">Modern Slavery Act Statement</a>
                     </div>
-                    <div id="dsSocket_2">DiaSorin S.p.A. - Capitale Sociale €55.948.257 R.E.A. 180729<br/>
+                    <div id="dsSocket_3">
+                        <div id="dsLogoWrapper">
+                            <a href="https://www.linkedin.com/company/diasorin" class="upText" target="_blank"><img id="dsLinkedin" src="img/diasorin_linkedin.png"></a>
+                            <a href="https://www.diasorin.com/en" class="upText"><img id="dsFooterLogo" src="img/diasorin_socket_logo.png"></a>
+                        </div>
+                        <div id="socketDisclaimer">DiaSorin S.p.A. - Capitale Sociale €55.948.257 R.E.A. 180729<br/>
                             Fiscal Code and Subscription to Vercelli Companies Register no 13144290155</div>
-                    <div id="dsSocket_3"><a href="https://www.diasorin.com/en" id="dsLinkBlog" class="upText"><img src="img/diasorin_socket_logo.png"></a></div>
+                    </div>
                 </div>  
             </div>
         </footer>
