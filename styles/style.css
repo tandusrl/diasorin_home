@@ -506,15 +506,32 @@ li.menuMobileButton a {
 }
 
 #dsSlide0 {
-    background-image: url('../img/diasorin_slide_1.jpg');
+    /* background-image: url('../img/diasorin_slide_1.jpg'); */
     background-color: #000;
-    background-position-x: right
+    /* background-position-x: right */
 }
 
-@media only screen and ( orientation:portrait ) {
+#dsSlide0 .container { max-width: 1600px }
+
+#dsSlide0 img.dsComingSoon { max-width: 400px }
+
+.slideInternalFlex, .slider-machinery { width: 50% }
+
+#dsSlide0 h2 { width: 100% }
+#dsSlide0 .flexFS {
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media only screen and ( orientation: portrait ) {
     #dsSlide0 {
-        background-image: url('../img/diasorin_slide_1v.jpg');
+        /* background-image: url('../img/diasorin_slide_1v.jpg'); */
+        background-color: #000
     }  
+}
+
+@media screen and ( max-width: 425px ) {
+    #dsSlide0 .container { padding: 0 10px !important }
 }
 
 #dsSlide1 {
@@ -530,7 +547,7 @@ li.menuMobileButton a {
     }  
 }
 
-@media only screen and ( orientation:portrait ) and (max-width: 425px) {
+@media only screen and ( orientation: portrait ) and (max-width: 425px) {
     #dsSlide1 {
         margin-top: 50px;
     }  
@@ -554,41 +571,76 @@ li.menuMobileButton a {
     align-items: center;
 }
 
-@media only screen and ( orientation: portrait ) and (max-width: 768px) {
+@media only screen and ( orientation: portrait ) {
     #dsSlider .container {
         align-items: flex-start;
     }
 
+    .slideInternalFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%
+    }
+
     #dsSlider .flexFS {
-        margin-top: 33%
+        margin-top: 33%;
+        height: 66vh;
+    }
+
+    .slider-machinery {
+        width: 100%;
+        max-width: 100% !important
     }
 }
 
 #dsSlider h2 {
     color: #fff;
-    font-size: 48px !important;
+    font-size: 42px !important;
     margin: 0;
     font-weight: 400;
     letter-spacing: 6px;
     text-align: left;
 }
 
-@media only screen and ( max-width: 768px ) {
+@media only screen and ( orientation: portrait ) {
     #dsSlider .container { justify-content: center; } 
     #dsSlider h2 {
         text-align: center;
+        font-size: 40px !important;
+        margin-top: 30px;
+        width: 100%
     }
 }
 
-@media only screen and ( max-height: 425px ) {
+@media only screen and ( max-height: 425px ), screen and ( max-width: 425px ) {
     #dsSlider h2 {
-        font-size: 32px !important
+        font-size: 20px !important;
+        margin-top: 0 !important
     }
     #dsSlider h5 {
-        font-size: 6px;
+        font-size: 8px !important;
     }
+    .slideInternalFlex { margin-top: 30px }
 }
 
+@media screen and ( orientation: portrait ), ( orientation: landscape ) and ( max-height: 425px ) {
+    #dsSlide0 img.dsComingSoon {
+        max-width: 250px !important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .slideInternalFlex { margin-top: 0 }
+    .flexFS { align-items: center }
+    #dsSlide0 img.dsComingSoon { margin: 0 }
+    #dsSlide0 .container { padding: 0 20px !important }
+}
+
+@media screen and ( orientation: landscape ) and ( max-height: 425px ) {
+    #dsSlider h2 { font-size: 12px !important; }
+}
 
 #dsDisclaimerDiv {
     position: absolute;
@@ -624,7 +676,7 @@ li.menuMobileButton a {
     }
 }
 
-@media only screen and ( max-width: 768px ) {
+@media only screen and ( orientation: portrait ) {
     #dsSlider {
         justify-content: center;
         padding: 0;
@@ -651,6 +703,7 @@ li.menuMobileButton a {
 
     #dsSlider h5 {
         text-align: center;
+        margin: 0;
     }
 
     #dsLiaisonLogo {

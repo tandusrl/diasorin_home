@@ -1,7 +1,8 @@
-/* SLIDER CANVAS */
+/* ---- SLIDER CANVAS ---- */
 $(document).ready(function(){
-    $('h2#dsComingSoon').delay(500).fadeIn(3000);
-    $('#dsSlider h5').delay(1500).fadeIn(5000);
+    $('.dsComingSoon').delay(500).fadeIn(3000);
+    $('.slider-machinery').delay(1500).fadeIn(3000);
+    $('#dsDisclaimerDiv').delay(1500).fadeIn(5000);
 });
 
 $(document).ready(function(){

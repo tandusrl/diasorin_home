@@ -50,6 +50,10 @@ body {
     .text {
         font-size: 14px;
     }
+
+    .flexFS {
+        align-items: baseline
+    }
 }
 
 @media only screen and ( max-height: 425px ) {
@@ -105,25 +109,18 @@ body {
     font-size: 12px;
 }
 
-/* RESPONSIVITY MENUS - BREAKPOINT 1180PX */
-@media only screen and ( max-width: 1179px ) {
-    #menuCenter, #menuRight { display: none; }
-}
-
-@media only screen and ( min-width: 1180px ) {
-    #menuMobile, #menuMobileActive, #menuMobileClose { display: none; }
-}
-
+.cc-window.cc-top { z-index: 100000; }
 
 /* ----- MENU - DESKTOP ----- */
 
 #dsMenuWrapper {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     background: #fff;
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
+    top: -300px;
 }
 
 #dsMenu_desktop {
@@ -133,7 +130,7 @@ body {
     background-color: #fff;
     display: flex;
     align-items: center;
-    max-width: 1360px;
+    /* max-width: 1360px; */
     /* border-bottom: 1px solid #003a79; */
 }
 
@@ -183,7 +180,7 @@ ul.dsMenuDesktop {
 
 #dsMenuElements ul.dsMenuDesktop li a {
     display: block;
-    padding: 42px 20px;
+    padding: 42px 15px;
     color: #003a79;
     font-size: 12px;
 }
@@ -211,6 +208,153 @@ ul.dsMenuDesktop {
     background-color: #58b895;
 }
 
+#molecularTop, #corporateTop {
+    background-color: #003a79;
+}
+
+.topRightMenu {
+    font-size: 12px;
+}
+
+#disclaimerTop {
+    font-size: 8px;
+    text-align: right;
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+}
+
+#menuRightDisclaimer {
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 285px
+}
+
+.dsGroupMenu {
+    width: 100%;
+    background-color: #073b77;
+    color: #fff;
+    text-align: center;
+    z-index: 10000;
+    font-size: 12px;
+    text-transform: uppercase
+}
+
+.dsGroupToggle {
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 12px
+}
+
+@media screen and ( max-height: 425px ) {
+    .dsGroupToggle { font-size: 9.8px !important }
+}
+
+.dsGroupToggle img {
+    vertical-align: bottom
+}
+
+.dsGroupSites {
+    display: flex;
+}
+
+#dsGroupMenuMobile .dsGroupSites { flex-wrap: wrap }
+
+#dsGroupMenu .dsGroupSites  {
+    height: 300px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#dsGroupMenuMobile .dsGroupSites  {
+    height: 70vh;
+}
+
+.dsSite {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    color: #fff !important;
+}
+
+.dsSite:hover{
+    text-decoration: underline !important
+}
+
+/* #dsGroupMenuMobile .dsSite { height: 70vh } */
+
+.dsGroupIcons {
+    padding: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #09386e;
+}
+
+.dsSite span::before {
+    content: url('../img/ds_group.png');
+    padding: 30px 33px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #09386e; 
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(.85);
+    transition: 1s
+}
+
+.dsSite span:hover::before {
+    background-color: #fff; 
+    content: url('../img/ds_group_b.png');
+    transition: 1s;
+    transform: scale(1);
+}
+
+#dsImmLink span::before {
+    content: url('../img/ds_immuno.png');
+}
+
+#dsImmLink span:hover::before {
+    content: url('../img/ds_immuno_b.png');
+}
+
+.dsMolLink span::before {
+    content: url('../img/ds_molecular.png');
+}
+
+.dsMolLink span:hover::before {
+    content: url('../img/ds_molecular_b.png');
+}
+
+@media only screen and ( max-width: 425px ) and ( orientation: portrait ), ( max-height: 425px ) and ( orientation: landscape )  {
+    #dsGroupMenu { display: none !important }
+    #dsGroupMenuMobile { display: block !important }
+    #dsMenuWrapper { top: -70vh; }
+
+    .dsSite span::before {
+        width: 52px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and ( max-width: 830px ) {
+    .dsSite span::before {
+        width: 52px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and ( max-width: 425px ) {
+    .dsSite { 
+        width: 100%;
+    }
+}
+
 /* -----  MENU - MOBILE ----- */
 
 #menuMobile {
@@ -222,7 +366,7 @@ ul.dsMenuDesktop {
     right: -320px;
     top: 0;
     background-color: #fff;
-    z-index: 999;
+    z-index: 10000;
 }
 
 @media only screen and ( max-height: 425px ) {
@@ -286,7 +430,7 @@ ul#menuMobileList li:hover {
 }
 
 .menuMobileButton:hover {
-    background-color: #003a79 !important;
+    background-color: #00254d !important;
 }
 
 ul#menuMobileList li a {
@@ -321,6 +465,23 @@ li.menuMobileButton a {
     background-color: rgba(0,58,121,.5);
 }
 
+#disclaimerMobile {
+    font-size: 9px
+}
+
+#disclaimerMobile:hover {
+    background-color: #fff !important;
+}
+
+/* RESPONSIVITY MENUS - BREAKPOINT 1180PX */
+@media only screen and ( max-width: 1319px ) {
+    #menuCenter, #menuRight, #menuRightDisclaimer { display: none; }
+}
+
+@media only screen and ( min-width: 1320px ) {
+    #menuMobile, #menuMobileActive, #menuMobileClose { display: none; }
+}
+
 /* ----- SLIDER ----- */
 
 #dsSlider {
@@ -345,8 +506,15 @@ li.menuMobileButton a {
 }
 
 #dsSlide0 {
-    background-image: url('../img/diasorin_diagnostic_specialists_coming_soon.jpg');
+    background-image: url('../img/diasorin_slide_1.jpg');
     background-color: #000;
+    background-position-x: right
+}
+
+@media only screen and ( orientation:portrait ) {
+    #dsSlide0 {
+        background-image: url('../img/diasorin_slide_1v.jpg');
+    }  
 }
 
 #dsSlide1 {
@@ -354,6 +522,19 @@ li.menuMobileButton a {
     background-size: contain;
     background-color: #e6e6de;
 } 
+
+@media only screen and ( orientation:portrait ) {
+    #dsSlide1 {
+        background-image: url('../img/diasorin_slide_2v.jpg');
+        margin-top: 100px;
+    }  
+}
+
+@media only screen and ( orientation:portrait ) and (max-width: 425px) {
+    #dsSlide1 {
+        margin-top: 50px;
+    }  
+}
 
 #dsSlide2 {
     background-image: url('../img/diasorin_slide_3.jpg');
@@ -373,12 +554,22 @@ li.menuMobileButton a {
     align-items: center;
 }
 
+@media only screen and ( orientation: portrait ) and (max-width: 768px) {
+    #dsSlider .container {
+        align-items: flex-start;
+    }
+
+    #dsSlider .flexFS {
+        margin-top: 33%
+    }
+}
+
 #dsSlider h2 {
     color: #fff;
     font-size: 48px !important;
     margin: 0;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     text-align: left;
 }
 
@@ -798,11 +989,11 @@ li.menuMobileButton a {
 /* ----- FOOTER ----- */
 
 footer {
-    background-color: #003a79;
+    background-color: #000;
 }
 
-.footerThird {
-    width: 30%;
+.footerFourth {
+    width: 25%;
     margin: 0 1.5%;
     /* text-align: center; */
     padding: 20px 0;
@@ -820,7 +1011,7 @@ footer {
 }
 
 #dsFooterTwo {
-    text-align: center;
+    text-align: right;
 }
 
 .footerLinks  {
@@ -830,10 +1021,11 @@ footer {
     border-radius: 30px;
     font-size: 12px;
     max-width: 200px;
-    margin: 20px auto;
+    margin: 20px 0 20px;
     color: #003a79;
     display: block;
     transition: .25s;
+    text-align: center
 }
 
 @media only screen and ( max-width: 768px ) {
@@ -878,7 +1070,7 @@ footer {
         display: block;
     }
 
-    .footerThird {
+    .footerFourth {
         margin: 0 auto;
         text-align: center;
         width: 100%;
@@ -902,6 +1094,18 @@ footer {
         padding: 0 !important;
         display: inline-block;
     }
+
+    .contacts, .contacts * {
+        text-align: center !important
+    }
+
+    .footerLinks {
+        margin: 20px auto !important
+    }
+
+    #dsFooterTwo {
+        text-align: center;
+    }
 }
 
 @media only screen and ( max-width: 449px ) {
@@ -909,18 +1113,18 @@ footer {
         display: block;
     }
 
-    .footerThird {
+    .footerFourth {
         text-align: center;
         margin: 0 auto;
         width: 100%;
     }
 }
 
-#dsFooterThree {
+/* #dsFooterThree {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 #dsFooterThree a::before {
     content: url('../img/diasorin_world_icon.png');
@@ -972,16 +1176,28 @@ img.dsPopupStore {
     margin: 10px 0;
 }
 
+.contacts *, .contacts {
+    color: #acacac !important;
+    text-align: right;
+    font-size: 14px
+
+}
+
+.contacts h3 {
+    margin-top: 0;
+    text-transform: uppercase
+}
+
 /* ----- SOCKET -----*/
 
 #dsSocket {
-    height: 100px;
-    width:100%;
-    background-color: #000;
+    /* height: 120px; */
+    width: 100%;
+    background-color: #003a79;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     font-size: 12px;
 }
 
@@ -989,36 +1205,83 @@ img.dsPopupStore {
     max-width: 1280px;
     width: 100%;
     display: flex;
+    padding: 30px 50px;
+    box-sizing: border-box;
 }
 
-#dsSocket_1, #dsSocket_3 {
+#dsSocket_1, #dsSocket_2 {
     width: 25%;
 }
 
-#dsSocket_2 {
+.dsSocketLink::before {
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block !important;
+    margin-right: 7px !important;
+    padding: 2px 3px;
+    vertical-align: middle
+}
+
+#dsSocketGroup::before {
+    content: url('../img/ds_group_b_socket.png');
+}
+
+#dsSocketGroup {
+    margin-top: 0 !important
+}
+
+#dsSocketMolecular::before {
+    content: url('../img/ds_molecular_b_socket.png');
+}
+
+#dsSocketMolecular {
+    margin-bottom: 0 !important
+}
+
+#dsSocket_3 {
     width: 50%;
 }
 
-#dsSocket img {
-    width: 180px;
+#dsFooterLogo {
+    width: 120px;
+
+}
+
+.socket-social {
+    width: 30px;
+    margin-right: 20px
 }
 
 #dsSocket a {
-    cursor: pointer;
+    cursor: pointer
 }
+
+#dsLogoWrapper {
+    margin-bottom: 20px
+}
+
+#dsSocket_3 {
+    text-align: right
+}
+
 
 @media only screen and ( max-width: 768px ) {
     #dsSocket, #dsSocketContainer {
         height: auto;
         display: block;
+
     }
 
     #dsSocket_1, #dsSocket_2, #dsSocket_3 {
         width: 100%;
         padding: 15px 0;
+        text-align: center !important
     }
 }
 
+
+
+/* ---- BULLETS ---- */
 
 #sliderBullets {
     bottom: 20px;
