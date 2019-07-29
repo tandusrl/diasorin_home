@@ -557,7 +557,34 @@ li.menuMobileButton a {
     background-image: url('../img/diasorin_slide_3.jpg');
     background-size: contain;
     background-color: #fff;
-} 
+}
+
+#video-link-homepage {
+    display: block;
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+    font-size: 18px;
+    text-align: right
+}
+
+@media screen and ( orientation: portrait ) {
+    #video-link-homepage {
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media screen and ( max-width: 767px ) {
+    #video-link-homepage { font-size: 10px }
+}
+
+@media screen and ( max-height: 425px ) {
+    #video-link-homepage { bottom: 15vh;
+    font-size: 9px }
+}
 
 .dsSlideOverlay {
     background-color: rgba(0,0,0,.5);
@@ -967,9 +994,15 @@ li.menuMobileButton a {
 #blogLoop {
     list-style: none;
     padding-left: 0;
-    display: flex;
-    justify-content: space-around;
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 10px;
 }
+
+#blog-row { display: table-row }
+
+#blog-row > div { display: table-cell }
 
 #blogLoop div .blogPost {
     transition: .25s;
@@ -985,13 +1018,13 @@ li.menuMobileButton a {
 }
 
 
-@media only screen and ( max-width: 1060px ) {
+/* @media only screen and ( max-width: 1060px ) {
     #blogLoop div .blogPost {
         width: 150px !important;
         height: 150px !important;
     }
-}
-
+} */
+/* 
 @media only screen and ( max-width: 900px ) {
     #blogLoop { flex-wrap: wrap; }
 
@@ -1000,7 +1033,7 @@ li.menuMobileButton a {
         height: 250px !important;
         margin: 20px 0;
     }
-}
+} 
 
 @media only screen and ( max-width: 685px ) {
     #blogLoop, #blogLoop > div { width: 100% !important; }
@@ -1017,16 +1050,27 @@ li.menuMobileButton a {
         margin: 0;
     }
 
+}*/
+
+@media screen and ( max-width: 768px ) {
+    #blog-row {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .blogPost { width: 100% !important; 
+        margin: 10px 0 }
 }
 
 #blogLoop div .blogPost {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
+    display: table-cell;
+    /* width: 200px;
+    height: 200px; */
     box-shadow: 0 0 20px #aaa;
     padding: 20px;
     background-color:rgba(255,255,255,.8);
     color:#000;
+    width: 25%;
     /* cursor: pointer; */
 }
 
