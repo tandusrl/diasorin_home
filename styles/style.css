@@ -155,6 +155,8 @@ body {
 
 #dsMenuElements ul {
     list-style: none;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 #dsMenuElements ul li {
