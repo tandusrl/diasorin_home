@@ -188,16 +188,17 @@ AOS.init(
 
 /* --- POPUP - COVID --- */
 $(document).ready(function(){
-    if (Cookies.get('cvd9') !== 'read') {
-        setTimeout(function(){
-            $('.covid-popup-wrapper').addClass('active')
-        }, 3000)
-    } else {
-        $('.covid-popup-wrapper').remove()
-    } 
+    // if (Cookies.get('cvd9') !== 'read') {
+
+    // } else {
+    //     $('.covid-popup-wrapper').remove()
+    // } 
+    setTimeout(function(){
+        $('.covid-popup-wrapper').addClass('active')
+    }, 1000)
     $('.covid-close-popup').on('click', function(){
         $('.covid-popup-wrapper').removeClass('active')
-        Cookies.set('cvd9', 'read', { expires: 30 } )
+        // Cookies.set('cvd9', 'read', { expires: 30 } )
         setTimeout(function(){
             $('.covid-popup-wrapper').remove()
         }, 2000)

@@ -23,6 +23,11 @@ body {
     text-decoration: none !important;
 }
 
+::-moz-selection {
+    color: #fff;
+    background-color: #003a79;
+}
+
 ::selection {
     color: #fff;
     background-color: #003a79;
@@ -41,8 +46,10 @@ body {
 }
 
 .flexFS {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     flex-wrap: wrap;
 }
 
@@ -52,7 +59,8 @@ body {
     }
 
     .flexFS {
-        align-items: baseline
+        -webkit-box-align: baseline;
+                align-items: baseline
     }
 }
 
@@ -69,13 +77,17 @@ body {
     border-radius: 30px;
     font-size: 12px;
     display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     display: table;
+    -webkit-transition: .25s;
     transition: .25s;
 }
 
 .dsLink:hover {
     background-color: #002751;
+    -webkit-transition: .25s;
     transition: .25s;
 }
 
@@ -135,8 +147,10 @@ body {
     width: 100vw;
     height: 100px;
     background-color: #fff;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     /* max-width: 1360px; */
     /* border-bottom: 1px solid #003a79; */
 }
@@ -147,9 +161,12 @@ body {
 }
 
 #dsMenuElements {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
     width: 100%;
 }
 
@@ -175,6 +192,7 @@ ul#menuCenter li::before {
     height: 4px;
     width: 0%;
     background-color: #003a79;
+    -webkit-transition: .5s;
     transition: .5s;
 }
 
@@ -235,8 +253,10 @@ ul.dsMenuDesktop {
 
 #menuRightDisclaimer {
     margin-right: 40px;
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     flex-wrap: wrap;
     width: 285px
 }
@@ -266,6 +286,7 @@ ul.dsMenuDesktop {
 }
 
 .dsGroupSites {
+    display: -webkit-box;
     display: flex;
 }
 
@@ -283,9 +304,12 @@ ul.dsMenuDesktop {
 
 .dsSite {
     width: 50%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     text-transform: none;
     color: #fff !important;
 }
@@ -311,15 +335,19 @@ ul.dsMenuDesktop {
     background-color: #09386e; 
     display: inline-block;
     vertical-align: middle;
-    transform: scale(.85);
+    -webkit-transform: scale(.85);
+            transform: scale(.85);
+    -webkit-transition: 1s;
     transition: 1s
 }
 
 .dsSite span:hover::before {
     background-color: #fff; 
     content: url('../img/ds_group_b.png');
+    -webkit-transition: 1s;
     transition: 1s;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
 }
 
 #dsImmLink span::before {
@@ -496,8 +524,10 @@ li.menuMobileButton a {
 #dsSlider {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     /* background-color: #000;
     padding: 0 10%; */
 }
@@ -529,7 +559,8 @@ li.menuMobileButton a {
 #dsSlide0 h2 { width: 100% }
 #dsSlide0 .flexFS {
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
 }
 
 @media only screen and ( orientation: portrait ) {
@@ -580,7 +611,8 @@ li.menuMobileButton a {
 @media screen and ( orientation: portrait ) {
     #video-link-homepage {
         right: 50%;
-        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+                transform: translateX(50%);
         text-align: center;
         width: 90%;
     }
@@ -603,19 +635,25 @@ li.menuMobileButton a {
     /* margin: 0 !important; */
     /* width: 100%; */
     height: 100%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 @media only screen and ( orientation: portrait ) {
     #dsSlider .container {
-        align-items: flex-start;
+        -webkit-box-align: start;
+                align-items: flex-start;
     }
 
     .slideInternalFlex {
+        display: -webkit-box;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
         flex-wrap: wrap;
         width: 100%
     }
@@ -641,7 +679,7 @@ li.menuMobileButton a {
 }
 
 @media only screen and ( orientation: portrait ) {
-    #dsSlider .container { justify-content: center; } 
+    #dsSlider .container { -webkit-box-pack: center; justify-content: center; } 
     #dsSlider h2 {
         text-align: center;
         font-size: 40px !important;
@@ -669,7 +707,7 @@ li.menuMobileButton a {
     }
 
     .slideInternalFlex { margin-top: 0 }
-    .flexFS { align-items: center }
+    .flexFS { -webkit-box-align: center; align-items: center }
     #dsSlide0 img.dsComingSoon { margin: 0 }
     #dsSlide0 .container { padding: 0 20px !important }
 }
@@ -714,7 +752,8 @@ li.menuMobileButton a {
 
 @media only screen and ( orientation: portrait ) {
     #dsSlider {
-        justify-content: center;
+        -webkit-box-pack: center;
+                justify-content: center;
         padding: 0;
         flex-wrap: wrap;
     }
@@ -779,6 +818,8 @@ li.menuMobileButton a {
 
 #dsDescription a {
     display: table;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     /* width: -moz-fit-content; */
     margin: 0 auto;
@@ -794,6 +835,7 @@ li.menuMobileButton a {
 }
 
 #dsCAContainerGrad {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0,58,121,1)), color-stop(50%, rgba(0,0,0,0)));
     background-image: linear-gradient(to left, rgba(0,58,121,1) 0%, rgba(0,0,0,0) 50%);
     float: right;
     width: 100%;
@@ -805,8 +847,10 @@ li.menuMobileButton a {
 
 #dsCAContainerInner {
     height: 100%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     float: right;
 }
 
@@ -829,13 +873,15 @@ li.menuMobileButton a {
     } */
 
     #dsCAContainerGrad {
+        background-image: -webkit-gradient(linear, right top, left top, from(rgba(0,30,60,1)), to(rgba(0,0,0,0)));
         background-image: linear-gradient(to left, rgba(0,30,60,1) 0%, rgba(0,0,0,0) 100%);
     }
 
     #dsCAContainerInner {
         width: 100%;
         text-align: center;
-        justify-content: center;
+        -webkit-box-pack: center;
+                justify-content: center;
     }
 
     #dsCAContainerInner a {
@@ -848,17 +894,22 @@ li.menuMobileButton a {
 
 .half {
     width: 50%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 #dsMachines {
     width: 100%;
     min-height: 75%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 @media only screen and ( min-height: 769px ) {
@@ -895,8 +946,10 @@ li.menuMobileButton a {
 }
 
 #dsMachinesInner {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 #dsMachineryPicHolder {
@@ -909,13 +962,16 @@ li.menuMobileButton a {
 
 .dsMachineryImg {
     width:100%;
+    -webkit-transition: .25s;
     transition: .25s;
 }
 
 @media only screen and ( min-width: 768px ) {
     .dsMachineryImg:hover {
-        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
         -moz-transform: scale(1.05);
+        -webkit-transition: .25s;
         transition: .25s;
     }
 }
@@ -949,8 +1005,10 @@ li.menuMobileButton a {
 
 #dsPresenceInner {
     min-height: 40%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     width: 50%;
 }
 
@@ -1014,11 +1072,13 @@ li.menuMobileButton a {
 #blog-row > div { display: table-cell }
 
 #blogLoop div .blogPost {
+    -webkit-transition: .25s;
     transition: .25s;
 }
 
 #blogLoop div .blogPost:hover {
     background-color: #fff;
+    -webkit-transition: .25s;
     transition: .25s;
 }
 
@@ -1063,6 +1123,7 @@ li.menuMobileButton a {
 
 @media screen and ( max-width: 768px ) {
     #blog-row {
+        display: -webkit-box;
         display: flex;
         flex-wrap: wrap
     }
@@ -1106,8 +1167,10 @@ footer {
 }
 
 #dsFooter {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     /* align-items: top; */
     padding: 30px 0;
 }
@@ -1130,6 +1193,7 @@ footer {
     margin: 20px 0 20px;
     color: #003a79;
     display: block;
+    -webkit-transition: .25s;
     transition: .25s;
     text-align: center
 }
@@ -1147,6 +1211,7 @@ footer {
 }
 
 .footerLinks:hover  {
+    -webkit-transition: .25s;
     transition: .25s;
     color: #fff;
     border: 1px #fff solid;
@@ -1155,8 +1220,10 @@ footer {
 }
 
 #dsContactContainer {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     font-size: 12px;
 }
 
@@ -1183,11 +1250,13 @@ footer {
     }
 
     #dsContactContainer {
+        display: -webkit-box;
         display: flex;
         justify-content: space-around;
     }
 
     #dsFooterTwo div {
+        display: -webkit-box;
         display: flex;
         flex-wrap: wrap;
     }
@@ -1244,8 +1313,10 @@ footer {
 }
 
 #dsPopupOverlay {
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 #dsPopUpApp {
@@ -1256,15 +1327,21 @@ footer {
     color: #000 !important;
     position: relative;
     border-radius: 5px;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 #dsPopUpAppInner {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -1300,9 +1377,11 @@ img.dsPopupStore {
     /* height: 120px; */
     width: 100%;
     background-color: #003a79;
+    display: -webkit-box;
     display: flex;
     /* align-items: center; */
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     /* text-align: center; */
     font-size: 12px;
 }
@@ -1310,6 +1389,7 @@ img.dsPopupStore {
 #dsSocketContainer {
     max-width: 1280px;
     width: 100%;
+    display: -webkit-box;
     display: flex;
     padding: 30px 50px;
     box-sizing: border-box;
@@ -1402,8 +1482,6 @@ img.dsPopupStore {
 }
 
 #sliderBullets a {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     background-color: #023A77;
     display: block;
@@ -1412,8 +1490,6 @@ img.dsPopupStore {
     width: 10px;
 
     -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1426,17 +1502,21 @@ img.dsPopupStore {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     background-color:#fff;
     border: 10px #003a79 solid;
     padding: 3rem;
     opacity: 0;
+    -webkit-transition: opacity 500ms ease-in-out;
     transition: opacity 500ms ease-in-out;
     width: 50%;
-    max-width: 700px
+    max-width: 700px;
+    z-index: 10001
 }
 .covid-popup-wrapper.active {
     opacity: 1;
+    -webkit-transition: opacity 500ms ease-in-out;
     transition: opacity 500ms ease-in-out;
 }
 .covid-popup-wrapper p {
