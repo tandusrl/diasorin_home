@@ -1446,17 +1446,19 @@ img.dsPopupStore {
     text-transform: uppercase;
     cursor: pointer;
     margin: 0 auto;
-    min-width: 180px;
     text-align: center;
 }
 
 .covid-popup-wrapper a {
     margin: 0 auto 1rem;
-    min-width: 180px;
     text-align: center;
 }
 
 
 @media ( max-width: 767px ) {
     .covid-popup-wrapper p { font-size: 11px }
+}
+@media ( min-width: 768px ) {
+    .covid-popup-wrapper a,
+    .covid-close-popup { min-width: 180px; }
 }

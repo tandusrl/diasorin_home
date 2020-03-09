@@ -198,6 +198,8 @@ $(document).ready(function(){
     $('.covid-close-popup').on('click', function(){
         $('.covid-popup-wrapper').removeClass('active')
         Cookies.set('cvd9', 'read', { expires: 30 } )
-        console.log('close')
+        setTimeout(function(){
+            $('.covid-popup-wrapper').remove()
+        }, 2000)
     })
 })
