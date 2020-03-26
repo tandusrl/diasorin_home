@@ -519,9 +519,6 @@ li.menuMobileButton a {
     #menuMobile, #menuMobileActive, #menuMobileClose { display: none; }
 }
 
-/* ---- COVID SLIDE UPDATE ---- */
-
-
 /* ----- SLIDER ----- */
 
 #dsSlider {
@@ -548,119 +545,55 @@ li.menuMobileButton a {
 }
 
 #dsSlide0 {
-    background-image:url('../img/diasorin_covid_response.jpg');
-    background-size: cover
-}
-#dsSlide0 .slide-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:rgba(0,0,0,.5)
-}
-#dsSlide0 .container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start !important;
-    z-index: 10;
-    position: relative;
-    padding-top: 64px
-}
-#dsSlide0 h2 {
-    max-width: 600px;
-    font-weight: 700 !important;
-}
-#dsSlide0 img {
-    width: 250px;
-    margin: 3rem 0
-}
-#dsSlide0 .slide-button-container { display: flex }
-#dsSlide0 .slide-button-container a:first-child {
-    margin-right: 3rem;
-}
-
-@media ( orientation: portrait ) {
-    #dsSlide0 .container { align-items: center !important }
-}
-@media ( max-width: 767px ) {
-    #dsSlide0 img {
-        width: 125px
-    }
-    #dsSlide0 .slide-button-container {
-        display: block;
-        width: 150px
-    }
-    #dsSlide0 .slide-button-container a {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center
-    }
-    #dsSlide0 .slide-button-container a:first-child {
-        margin-right: auto;
-        margin-bottom: 1rem
-    }
-    #dsSlide0 h2 {
-        line-height: 22px
-    }
-}
-
-#dsSlide1 {
     /* background-image: url('../img/diasorin_slide_1.jpg'); */
     background-color: #000;
     /* background-position-x: right */
 }
 
-#dsSlide1 .container { max-width: 1600px }
+#dsSlide0 .container { max-width: 1600px }
 
-#dsSlide1 img.dsComingSoon {
-    max-width: 400px;
-    width: 90%;
-}
+#dsSlide0 img.dsComingSoon { max-width: 400px }
 
 .slideInternalFlex, .slider-machinery { width: 50% }
 
-#dsSlide1 h2 { width: 100% }
-#dsSlide1 .flexFS {
+#dsSlide0 h2 { width: 100% }
+#dsSlide0 .flexFS {
     width: 100%;
     -webkit-box-pack: justify;
             justify-content: space-between;
 }
 
 @media only screen and ( orientation: portrait ) {
-    #dsSlide1 {
+    #dsSlide0 {
         /* background-image: url('../img/diasorin_slide_1v.jpg'); */
         background-color: #000
     }  
 }
 
 @media screen and ( max-width: 425px ) {
-    #dsSlide1 .container { padding: 0 10px !important }
+    #dsSlide0 .container { padding: 0 10px !important }
 }
 
-#dsSlide2 {
+#dsSlide1 {
     background-image: url('../img/diasorin_slide_2.jpg');
     background-size: contain;
     background-color: #e6e6de;
 } 
 
 @media only screen and ( orientation:portrait ) {
-    #dsSlide2 {
+    #dsSlide1 {
         background-image: url('../img/diasorin_slide_2v.jpg');
         margin-top: 100px;
     }  
 }
 
 @media only screen and ( orientation: portrait ) and (max-width: 425px) {
-    #dsSlide2 {
+    #dsSlide1 {
         margin-top: 50px;
     }  
 }
 
-#dsSlide3 {
+#dsSlide2 {
     background-image: url('../img/diasorin_slide_3.jpg');
     background-size: contain;
     background-color: #fff;
@@ -1566,7 +1499,6 @@ img.dsPopupStore {
 
 /* --- COVID POPUP --- */
 .covid-popup-wrapper {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1575,9 +1507,17 @@ img.dsPopupStore {
     background-color:#fff;
     border: 10px #003a79 solid;
     padding: 3rem;
+    opacity: 0;
+    -webkit-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
     width: 50%;
     max-width: 700px;
     z-index: 10001
+}
+.covid-popup-wrapper.active {
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
 }
 .covid-popup-wrapper p {
     margin: 2rem 0;
