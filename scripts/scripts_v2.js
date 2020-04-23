@@ -28,7 +28,7 @@ $(document).ready(function(){
             currentSlide = index;
         } else {
             currentSlide += 1;
-            currentSlide = currentSlide % 4;
+            currentSlide = currentSlide % 5;
         }
 
         $('.dsSlide').fadeOut(1000);
