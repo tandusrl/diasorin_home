@@ -631,7 +631,12 @@ li.menuMobileButton a {
     margin-right: 3rem;
 }
 
-#dsSlide3 span {
+#dsSlide3 span.superscript {
+    font-size: 16px !important;
+    display: inline-block;
+    vertical-align: text-top;
+}  
+#dsSlide3 .subtitle {
     font-size: 24px !important;
     letter-spacing: 3px;
     display: block;
@@ -673,7 +678,8 @@ li.menuMobileButton a {
     .slide--button h2 {
         line-height: 22px
     }
-    #dsSlide0 h2 span { font-size: 16px !important }
+    #dsSlide0 h2 span,
+    #dsSlide3 h2 .subtitle { font-size: 16px !important }
 }
 
 #dsSlide1 {
