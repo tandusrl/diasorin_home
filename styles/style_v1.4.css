@@ -1,0 +1,1768 @@
+/* 
+
+COLOR PALETTE:
+blue - #003a79 - rgb(0,58,121)
+gray - #6c6c6c
+catalog - #29a3dd
+dialog - #58b895
+worldwide gradient - up|left #203b67 - bottom|right #030339
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html, body, #main, .heightFS { height: 100%; }
+
+body {
+    margin: 0 !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+* {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    text-decoration: none !important;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #003a79;
+}
+
+::selection {
+    color: #fff;
+    background-color: #003a79;
+}
+
+.upText {
+    text-transform: uppercase;
+}
+
+.whiteText * {
+    color: #fff;
+}
+
+.text {
+    margin-bottom: 60px;
+}
+
+.flexFS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+@media only screen and ( max-width: 768px ) {
+    .text {
+        font-size: 14px;
+    }
+
+    .flexFS {
+        -webkit-box-align: baseline;
+                -ms-flex-align: baseline;
+            align-items: baseline
+    }
+}
+
+@media only screen and ( max-height: 425px ) {
+    .text {
+        font-size: 10px;
+    }
+}
+
+.dsLink {
+    color: #fff;
+    background-color: #003a79;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 12px;
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: table;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+}
+
+.dsLink:hover {
+    background-color: #002751;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+}
+
+.container {
+    max-width: 1280px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.super {
+    vertical-align: super;
+    font-size: 10px;
+}
+
+.superTitle {
+    vertical-align: super;
+    font-size: 16px;
+}
+
+/* 
+.menuContainer {
+    width: 100%;
+
+    display: block;
+    margin: 0 auto;
+} */
+
+/* ----- COOKIE LAW ----- */
+.cc-message {
+    font-size: 12px;
+}
+
+.cc-window.cc-top { z-index: 100000; }
+
+.cc-link { display: none !important }
+
+.privacy-link {
+    opacity: .7;
+    color:#fff
+}
+
+/* ----- MENU - DESKTOP ----- */
+
+#dsMenuWrapper {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    background: #fff;
+    position: fixed;
+    z-index: 10000;
+    top: -300px;
+}
+
+#dsMenu_desktop {
+    /* position: fixed; */
+    width: 100vw;
+    height: 100px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    /* max-width: 1360px; */
+    /* border-bottom: 1px solid #003a79; */
+}
+
+#dsLogo img {
+    width: 100px;
+    margin-left: 40px;
+}
+
+#dsMenuElements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+        justify-content: space-between;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+}
+
+#dsMenuElements ul {
+    list-style: none;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#dsMenuElements ul li {
+    display: inline-block;
+}
+
+ul#menuCenter li {
+    position: relative;
+    margin-right: -4px;
+}
+
+ul#menuCenter li::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0%;
+    background-color: #003a79;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+ul#menuCenter li:hover::before {
+    width: 100%;
+}
+
+
+ul.dsMenuDesktop {
+    height: 100%;
+}
+
+#dsMenuElements ul.dsMenuDesktop li a {
+    display: block;
+    padding: 42px 15px;
+    color: #003a79;
+    font-size: 12px;
+}
+
+#menuRight {
+    margin-right: 40px;
+}
+
+.menuButton {
+    padding: 10px 20px !important;
+    border-radius: 20px;
+    /* margin: 38px 0; */
+    font-size: 12px;
+}
+
+.menuButton a {
+    color: #fff;
+}
+
+#catalogMenu {
+    background-color: #29a3dd;
+}
+
+#dialogMenu {
+    background-color: #58b895;
+}
+
+#molecularTop, #corporateTop {
+    background-color: #003a79;
+}
+
+.topRightMenu {
+    font-size: 12px;
+}
+
+#disclaimerTop {
+    font-size: 8px;
+    text-align: right;
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+}
+
+#menuRightDisclaimer {
+    margin-right: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 285px
+}
+
+.dsGroupMenu {
+    width: 100%;
+    background-color: #073b77;
+    color: #fff;
+    text-align: center;
+    z-index: 10000;
+    font-size: 12px;
+    text-transform: uppercase
+}
+
+.dsGroupToggle {
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 12px
+}
+
+@media screen and ( max-height: 425px ) {
+    .dsGroupToggle { font-size: 9.8px !important }
+}
+
+.dsGroupToggle img {
+    vertical-align: bottom
+}
+
+.dsGroupSites {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#dsGroupMenuMobile .dsGroupSites { -ms-flex-wrap: wrap; flex-wrap: wrap }
+
+#dsGroupMenu .dsGroupSites  {
+    height: 300px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#dsGroupMenuMobile .dsGroupSites  {
+    height: 70vh;
+}
+
+.dsSite {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+    text-transform: none;
+    color: #fff !important;
+}
+
+.dsSite:hover{
+    text-decoration: underline !important
+}
+
+/* #dsGroupMenuMobile .dsSite { height: 70vh } */
+
+.dsGroupIcons {
+    padding: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #09386e;
+}
+
+.dsSite span::before {
+    content: url('../img/ds_group.png');
+    padding: 30px 33px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #09386e; 
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: scale(.85);
+            -ms-transform: scale(.85);
+        transform: scale(.85);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s
+}
+
+.dsSite span:hover::before {
+    background-color: #fff; 
+    content: url('../img/ds_group_b.png');
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+        transform: scale(1);
+}
+
+#dsImmLink span::before {
+    content: url('../img/ds_immuno.png');
+}
+
+#dsImmLink span:hover::before {
+    content: url('../img/ds_immuno_b.png');
+}
+
+.dsMolLink span::before {
+    content: url('../img/ds_molecular.png');
+}
+
+.dsMolLink span:hover::before {
+    content: url('../img/ds_molecular_b.png');
+}
+
+@media only screen and ( max-width: 425px ) and ( orientation: portrait ), ( max-height: 425px ) and ( orientation: landscape )  {
+    #dsGroupMenu { display: none !important }
+    #dsGroupMenuMobile { display: block !important }
+    #dsMenuWrapper { top: -70vh; }
+
+    .dsSite span::before {
+        width: 52px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and ( max-width: 830px ) {
+    .dsSite span::before {
+        width: 52px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and ( max-width: 425px ) {
+    .dsSite { 
+        width: 100%;
+    }
+}
+
+/* -----  MENU - MOBILE ----- */
+
+#menuMobile {
+    position: fixed;
+    /* margin-top: 100px;  */
+    width: 320px;
+    /* min-width: 320px; */
+    height: 100%;
+    right: -320px;
+    top: 0;
+    background-color: #fff;
+    z-index: 10000;
+}
+
+@media only screen and ( max-height: 425px ) {
+    #menuMobileClose {
+        margin-top: 20px !important;
+    }
+
+    ul#menuMobileList {
+        margin-top: 50px !important;
+    }
+
+    #dsMenu_desktop {
+        height: 50px;
+    }
+
+    #dsLogo img {
+        width: 50px;
+    }
+
+    #menuMobile {
+        overflow: scroll;
+    }
+
+    ul#menuMobileList li {
+        padding: 8px 0 !important;
+    }
+}
+
+@media only screen and ( max-width: 425px ) {
+    #menuMobileClose {
+        margin-top: 20px !important;
+    }
+
+    ul#menuMobileList {
+        margin-top: 50px !important;
+    }
+
+    #dsMenu_desktop {
+        height: 50px;
+    }
+
+    #dsLogo img {
+        width: 50px;
+    }
+}
+
+ul#menuMobileList {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 100px;
+    font-size: 12px;
+}
+
+ul#menuMobileList li {
+    text-align: center;
+    padding: 20px 0;
+}
+
+ul#menuMobileList li:hover {
+    background-color: #eee;
+}
+
+.menuMobileButton:hover {
+    background-color: #00254d !important;
+}
+
+ul#menuMobileList li a {
+    color: #003a79;
+}
+
+li.menuMobileButton a {
+    color: #fff !important;
+}
+
+#menuMobileActive, #menuMobileClose {
+    color: #003a79;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#menuMobileClose {
+    float: right;
+    margin-top: 45px;
+}
+
+#menuMobileOverlay, #dsPopupOverlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #003a79;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0,58,121,.5);
+}
+
+#disclaimerMobile {
+    font-size: 9px
+}
+
+#disclaimerMobile:hover {
+    background-color: #fff !important;
+}
+
+/* RESPONSIVITY MENUS - BREAKPOINT 1180PX */
+@media only screen and ( max-width: 1319px ) {
+    #menuCenter, #menuRight, #menuRightDisclaimer { display: none; }
+}
+
+@media only screen and ( min-width: 1320px ) {
+    #menuMobile, #menuMobileActive, #menuMobileClose { display: none; }
+}
+
+/* ---- COVID SLIDE UPDATE ---- */
+
+
+/* ----- SLIDER ----- */
+
+#dsSlider {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+    /* background-color: #000;
+    padding: 0 10%; */
+}
+
+.dsSlide {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.slides-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#dsSlide0 {
+    background-image:url('../img/diasorin_lyme.jpg');
+}
+#dsSlide0c {
+    background-image:url('../img/diasorin_trimeric.jpg');
+}
+#dsSlide0 h2 span,
+#dsSlide0c h2 span {
+    display: block;
+    font-size: 21px !important;
+    margin-top: 2rem
+}
+#dsSlide3 {
+    background-image:url('../img/diasorin_quantiferon.jpg');
+
+}
+#dsSlide0b {
+    background-image:url('../img/diasorin_covid_response.jpg');
+}
+
+.slide--button .slide-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0,0,0,.5)
+}
+.slide--button .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-box-align: start !important;
+            -ms-flex-align: start !important;
+        align-items: flex-start !important;
+    z-index: 10;
+    position: relative;
+    padding-top: 64px
+}
+.slide--button h2 {
+    max-width: 700px;
+    font-weight: 700 !important;
+    margin-bottom: 40px !important
+}
+.slide--button img {
+    width: 250px;
+    margin: 3rem 0
+}
+.slide--button .slide-button-container { display: -webkit-box; display: -ms-flexbox; display: flex }
+.slide--button .slide-button-container a:first-child {
+    margin-right: 3rem;
+}
+
+#dsSlide3 span.superscript {
+    font-size: 16px !important;
+    display: inline-block;
+    vertical-align: text-top;
+}  
+#dsSlide3 .subtitle {
+    font-size: 24px !important;
+    letter-spacing: 3px;
+    display: block;
+    margin-top: 20px;
+} 
+#dsSlide3 p {
+    color: #fff;
+}
+
+@media ( orientation: portrait ) {
+    .slide--button .container { -webkit-box-align: center !important; -ms-flex-align: center !important; align-items: center !important }
+    .slide--button {
+        background-size: cover !important;
+    }
+    #dsSlide3 p {
+        text-align: center;
+    }
+    #dsSlide0 {
+        background-position-x: 66%;
+    }
+}
+@media ( max-width: 767px ) {
+    .slide--button img {
+        width: 125px
+    }
+    .slide--button .slide-button-container {
+        display: block;
+        width: 150px
+    }
+    .slide--button .slide-button-container a {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center
+    }
+    .slide--button .slide-button-container a:first-child {
+        margin-right: auto;
+        margin-bottom: 1rem
+    }
+    .slide--button h2 {
+        line-height: 22px
+    }
+    #dsSlide0 h2 span,
+    #dsSlide0c h2 span,
+    #dsSlide3 h2 .subtitle { font-size: 16px !important }
+}
+
+#dsSlide1 {
+    /* background-image: url('../img/diasorin_slide_1.jpg'); */
+    background-color: #000;
+    /* background-position-x: right */
+}
+
+#dsSlide1 .container { max-width: 1600px }
+
+#dsSlide1 img.dsComingSoon {
+    max-width: 400px;
+    width: 90%;
+}
+
+.slideInternalFlex, .slider-machinery { width: 50% }
+
+#dsSlide1 h2 { width: 100% }
+#dsSlide1 .flexFS {
+    width: 100%;
+    -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+
+@media only screen and ( orientation: portrait ) {
+    #dsSlide1 {
+        /* background-image: url('../img/diasorin_slide_1v.jpg'); */
+        background-color: #000
+    }  
+}
+
+@media screen and ( max-width: 425px ) {
+    #dsSlide1 .container { padding: 0 10px !important }
+}
+
+#dsSlide2 {
+    background-image: url('../img/diasorin_slide_2.jpg');
+    background-size: contain;
+    background-color: #e6e6de;
+} 
+
+@media only screen and ( orientation:portrait ) {
+    #dsSlide2 {
+        background-image: url('../img/diasorin_slide_2v.jpg');
+        margin-top: 100px;
+    }  
+}
+
+@media only screen and ( orientation: portrait ) and (max-width: 425px) {
+    #dsSlide2 {
+        margin-top: 50px;
+    }  
+}
+
+#video-link-homepage {
+    display: block;
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+    font-size: 18px;
+    text-align: right
+}
+
+@media screen and ( orientation: portrait ) {
+    #video-link-homepage {
+        right: 50%;
+        -webkit-transform: translateX(50%);
+                -ms-transform: translateX(50%);
+            transform: translateX(50%);
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media screen and ( max-width: 767px ) {
+    #video-link-homepage { font-size: 10px }
+}
+
+@media screen and ( max-height: 425px ) {
+    #video-link-homepage { bottom: 15vh;
+    font-size: 9px }
+}
+
+.dsSlideOverlay {
+    background-color: rgba(0,0,0,.5);
+}
+
+#dsSlider .container {
+    /* margin: 0 !important; */
+    /* width: 100%; */
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+}
+
+@media only screen and ( orientation: portrait ) {
+    #dsSlider .container {
+        -webkit-box-align: start;
+                -ms-flex-align: start;
+            align-items: flex-start;
+    }
+
+    .slideInternalFlex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+                -ms-flex-pack: center;
+            justify-content: center;
+        -webkit-box-align: center;
+                -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 100%
+    }
+
+    #dsSlider .flexFS {
+        margin-top: 33%;
+        height: 66vh;
+    }
+
+    .slider-machinery {
+        width: 100%;
+        max-width: 100% !important
+    }
+}
+
+#dsSlider h2 {
+    color: #fff;
+    font-size: 42px !important;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-align: left;
+}
+
+@media only screen and ( orientation: portrait ) {
+    #dsSlider .container { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } 
+    #dsSlider h2 {
+        text-align: center;
+        font-size: 40px !important;
+        margin-top: 30px;
+        width: 100%
+    }
+}
+
+@media only screen and ( max-height: 425px ), screen and ( max-width: 425px ) {
+    #dsSlider h2 {
+        font-size: 20px !important;
+        margin-top: 0 !important
+    }
+    #dsSlider h5 {
+        font-size: 8px !important;
+    }
+    .slideInternalFlex { margin-top: 30px }
+}
+
+@media screen and ( orientation: portrait ), ( orientation: landscape ) and ( max-height: 425px ) {
+    /* #dsSlide0 img.dsComingSoon {
+        max-width: 250px !important;
+        margin: 0 auto;
+        display: block;
+    } */
+
+    .slideInternalFlex { margin-top: 0 }
+    .flexFS { -webkit-box-align: center; -ms-flex-align: center; align-items: center }
+    /* #dsSlide0 img.dsComingSoon { margin: 0 } */
+    .slide--button .container { padding: 0 20px !important }
+}
+
+@media screen and ( orientation: landscape ) and ( max-height: 425px ) {
+    #dsSlider h2 { font-size: 12px !important; }
+}
+
+#dsDisclaimerDiv {
+    position: absolute;
+    bottom: 10%;
+    /* left: 10%; */
+}
+
+#dsSlider h5 {
+    position: relative;
+    font-size: 10px;
+    color: #6c6c6c;
+    z-index: 1;
+    padding: 0 5px;
+}
+
+
+#dsLiaisonLogo {
+    width: 300px;
+    display: block;
+    margin: 0;
+}
+
+
+@media only screen and ( max-height: 425px ) {
+    #dsSlider h5 {
+        font-size: 7px;
+    }
+}
+
+@media only screen and ( max-width: 425px ) {
+    #dsSlide2 h2 {
+        font-size: 28px !important;
+    }
+}
+
+@media only screen and ( orientation: portrait ) {
+    #dsSlider {
+        -webkit-box-pack: center;
+                -ms-flex-pack: center;
+            justify-content: center;
+        padding: 0;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    /* #dsSlide0 { background-image: url('../img/diasorin_diagnostic_specialists_coming_soon_s.jpg'); }
+    #dsSlide1 { background-image: url('../img/diasorin_diagnostic_specialists_coming_soon_2s.jpg'); }
+    #dsSlide2 {
+        background-image: url('../img/diasorin_diagnostic_specialists_coming_soon_3s.jpg');
+        background-size: contain;
+    } */
+
+    .dsSlide {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    #dsDisclaimerDiv {
+        left: 0;
+        width: 100%;
+    }
+
+    #dsSlider h5 {
+        text-align: center;
+        margin: 0;
+    }
+
+    #dsLiaisonLogo {
+        margin: 0 auto;
+        width: 200px;
+    }
+
+}
+
+.dsSliderWrapper {
+    background-color: rgba(0,0,0,.5);
+}
+
+/* ----- DESCRIPTION -----*/
+
+#dsDescription {
+    text-align: center;
+    background: url('../img/diasorin_diagnostic_background.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position-y: bottom; 
+    padding: 50px 20%;
+}
+
+@media only screen and ( max-width: 425px ) {
+    #dsDescription {
+        padding: 50px 25px;
+    }
+}
+
+@media only screen and ( max-width: 425px ), screen and ( max-height: 425px ) {
+    #dsDescription {
+        background: url('../img/diasorin_diagnostic_background_right.jpg') no-repeat;
+        background-position: right center;
+        background-size: cover;
+    }
+}
+
+#dsDescription a {
+    display: table;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    /* width: -moz-fit-content; */
+    margin: 0 auto;
+}
+
+/* ----- CLINICAL AREAS ----- */
+
+#dsCAContainer {
+    background: url('../img/diasorin_clinical_areas.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom center; 
+    height: 100%;
+}
+
+#dsCAContainerGrad {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0,58,121,1)), color-stop(50%, rgba(0,0,0,0)));
+    background-image: -o-linear-gradient(right, rgba(0,58,121,1) 0%, rgba(0,0,0,0) 50%);
+    background-image: linear-gradient(to left, rgba(0,58,121,1) 0%, rgba(0,0,0,0) 50%);
+    float: right;
+    width: 100%;
+}
+
+#dsCAContainerGrad .container {
+    height: inherit;
+}
+
+#dsCAContainerInner {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    float: right;
+}
+
+#dsCAContainerInner a {
+    float: right;
+    clear: right;
+}
+
+@media only screen and ( min-width: 900px ) {
+    #dsCAContainerInner {
+        width: 40%;
+        text-align: right;
+    }
+}
+
+@media only screen and ( max-width: 899px ) {
+/* 
+    #dsCAContainer {
+        background-position-x: left;
+    } */
+
+    #dsCAContainerGrad {
+        background-image: -webkit-gradient(linear, right top, left top, from(rgba(0,30,60,1)), to(rgba(0,0,0,0)));
+        background-image: -o-linear-gradient(right, rgba(0,30,60,1) 0%, rgba(0,0,0,0) 100%);
+        background-image: linear-gradient(to left, rgba(0,30,60,1) 0%, rgba(0,0,0,0) 100%);
+    }
+
+    #dsCAContainerInner {
+        width: 100%;
+        text-align: center;
+        -webkit-box-pack: center;
+                -ms-flex-pack: center;
+            justify-content: center;
+    }
+
+    #dsCAContainerInner a {
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+/* ----- MACHINES ----- */
+
+.half {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+}
+
+#dsMachines {
+    width: 100%;
+    min-height: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+}
+
+@media only screen and ( min-height: 769px ) {
+    #dsMachines {
+        height: inherit;
+    }
+}
+
+@media only screen and ( max-width: 768px ) {
+    #dsMachines {
+        height: inherit;
+    }
+}
+
+.dsMachinesContainer a h1 {
+    color: #003a79 !important;
+}
+
+.dsMachinesContainer .text {
+    margin-bottom: 20px !important;
+}
+
+#dsMachines .container {
+    padding: 30px;
+}
+
+#dsMachinerySliderBullets a {
+    opacity: .5;
+    margin: 0 5px;
+}
+
+#dsMachinerySliderBullets a.activeBullet {
+    opacity: 1;
+}
+
+#dsMachinesInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+}
+
+#dsMachineryPicHolder {
+    overflow: hidden;
+}
+
+#dsMachinesImg {
+    float: left;
+}
+
+.dsMachineryImg {
+    width:100%;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .dsMachineryImg:hover {
+        -webkit-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -webkit-transition: .25s;
+        -o-transition: .25s;
+        transition: .25s;
+    }
+}
+
+@media only screen and ( max-width: 768px ) {
+    .half { width: 100%; }
+    #dsMachinesInner { padding: 10%; }
+}
+
+/* ----- WORLDWIDE PRESENCE ----- */
+
+#dsPresenceExt {
+    background-image: -o-linear-gradient(315deg, #203b67 0%, #030339 100%);
+    background-image: linear-gradient(135deg, #203b67 0%, #030339 100%);
+}
+
+#dsPresence {
+    padding: 50px 0;
+    /* height: 50%; */
+}
+
+#dsPresence .container {
+    background: url('../img/diasorin_worldwide_world_map.png') no-repeat; 
+    background-size: contain;
+    background-position-x: right;
+    /* max-width: 1080px; */
+}
+
+#dsPresenceContainer {
+    position: relative;
+}
+
+#dsPresenceInner {
+    min-height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    width: 50%;
+}
+
+.dsLinkAreas {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+@media only screen and ( max-width: 768px ) {
+    #dsPresenceInner {
+        width: 100%;
+        text-align: center;
+    }
+
+    #dsPresenceInner .dsLinkAreas {
+        margin: 0 auto;
+    }
+
+    #dsPresence .container {
+        background-position: center center;
+    }
+
+}
+
+/* ----- NEWS ----- */
+
+#dsBlog {
+    background: url('../img/diasorin_diagnostic_background.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position-y: bottom; 
+}
+
+@media only screen and ( max-width: 768px ) {
+    #dsBlog {
+        background: url('../img/diasorin_diagnostic_background_top.jpg'), url('../img/diasorin_diagnostic_background.jpg') ;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100% auto, 100% auto;
+        background-position-y: top, bottom; 
+    }
+}
+
+#dsBlog .container {
+    padding: 50px;
+}
+
+#dsBlog h1 {
+    margin: 0 0 20px 0;
+}
+
+#blogLoop {
+    list-style: none;
+    padding-left: 0;
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#blog-row { display: table-row }
+
+#blog-row > div { display: table-cell }
+
+#blogLoop div .blogPost {
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+}
+.blogPost a {
+    color:#003a79
+}
+
+#blogLoop div .blogPost:hover {
+    background-color: #fff;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+}
+
+.blogDescr.text {
+    font-size: 13px;
+}
+
+.blogDescrSecondary {
+    font-size: 12px;
+    line-height: initial;
+}
+
+
+/* @media only screen and ( max-width: 1060px ) {
+    #blogLoop div .blogPost {
+        width: 150px !important;
+        height: 150px !important;
+    }
+} */
+/* 
+@media only screen and ( max-width: 900px ) {
+    #blogLoop { flex-wrap: wrap; }
+
+    #blogLoop div .blogPost {
+        width: 250px !important;
+        height: 250px !important;
+        margin: 20px 0;
+    }
+} 
+
+@media only screen and ( max-width: 685px ) {
+    #blogLoop, #blogLoop > div { width: 100% !important; }
+
+    #blogLoop div .blogPost {
+        height: 220px !important;
+        margin: 20px 0;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    #blogLoop div .blogPost div {
+        padding: 20px;
+        margin: 0;
+    }
+
+}*/
+
+
+#blogLoop div .blogPost {
+    display: table-cell;
+    /* width: 200px;
+    height: 200px; */
+    -webkit-box-shadow: 0 0 20px #aaa;
+            box-shadow: 0 0 20px #aaa;
+    padding: 20px;
+    background-color:rgba(255,255,255,.8);
+    color:#000;
+    width: 25%;
+    /* cursor: pointer; */
+}
+
+@media ( max-width: 990px ) {
+    #blogLoop { display: block }
+    #blog-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+            justify-content: space-between;
+    }
+    #blogLoop div .blogPost {
+        width: 44%;
+        margin-bottom: 10px
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    #blog-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap
+    }
+
+    .blogPost { width: 100% !important; 
+        margin: 10px 0 }
+}
+
+
+#dsLinkBlog {
+    margin: 20px auto;
+}
+
+.blogDate {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    background-color: #000;
+}
+
+.footerFourth {
+    width: 25%;
+    margin: 0 1.5%;
+    /* text-align: center; */
+    padding: 20px 0;
+}
+
+#dsFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+    /* align-items: top; */
+    padding: 30px 0;
+}
+
+#dsFooter h2 {
+    margin: 0;
+}
+
+#dsFooterTwo {
+    text-align: right;
+}
+
+.footerLinks  {
+    background-color: #fff;
+    padding: 15px 30px;
+    border: 1px #fff solid;
+    border-radius: 30px;
+    font-size: 12px;
+    max-width: 200px;
+    margin: 20px 0 20px;
+    color: #003a79;
+    display: block;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+    text-align: center
+}
+
+@media only screen and ( max-width: 768px ) {
+    .footerLinks  {
+        width: 100%; 
+    }
+}
+
+@media only screen and ( max-width: 375px ) {
+    .footerLinks  {
+        max-width: 150px;
+    }
+}
+
+.footerLinks:hover  {
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+    color: #fff;
+    border: 1px #fff solid;
+    background-color: #003a79;
+    cursor: pointer;
+}
+
+#dsContactContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+        justify-content: space-between;
+    font-size: 12px;
+}
+
+@media only screen and ( max-width: 946px ) {
+    #dsContactContainer {
+        display: block;
+    }
+}
+
+@media only screen and ( min-width: 450px ) and ( max-width:768px ) {
+
+    footer .container {
+        max-width: 425px;
+    }
+    
+    #dsFooter {
+        display: block;
+    }
+
+    .footerFourth {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    #dsContactContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    #dsFooterTwo div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    /* #dsFooterReferences {
+        display: flex;
+    } */
+
+    #dsFooterThree {
+        padding: 0 !important;
+        display: inline-block;
+    }
+
+    .contacts, .contacts * {
+        text-align: center !important
+    }
+
+    .footerLinks {
+        margin: 20px auto !important
+    }
+
+    #dsFooterTwo {
+        text-align: center;
+    }
+}
+
+@media only screen and ( max-width: 449px ) {
+    #dsFooter {
+        display: block;
+    }
+
+    .footerFourth {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+/* #dsFooterThree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#dsFooterThree a::before {
+    content: url('../img/diasorin_world_icon.png');
+    vertical-align: sub;
+    margin-right: 10px;
+}
+
+#dsFooterReferences a {
+    display: block;
+    margin: 20px 0;
+}
+
+#dsPopupOverlay {
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+}
+
+#dsPopUpApp {
+    width: 250px;  
+    height: 250px;
+    background-color: #fff;
+    z-index: 999;
+    color: #000 !important;
+    position: relative;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+}
+
+#dsPopUpAppInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+#dsPopupClose {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    color: #003a79;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+img.dsPopupStore {
+    width: 200px;
+    margin: 10px 0;
+}
+
+.contacts *, .contacts {
+    color: #acacac !important;
+    text-align: right;
+    font-size: 14px
+
+}
+
+.contacts h3 {
+    margin-top: 0;
+    text-transform: uppercase
+}
+
+/* ----- SOCKET -----*/
+
+#dsSocket {
+    /* height: 120px; */
+    width: 100%;
+    background-color: #003a79;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* align-items: center; */
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+        justify-content: center;
+    /* text-align: center; */
+    font-size: 12px;
+}
+
+#dsSocketContainer {
+    max-width: 1280px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#dsSocket_1, #dsSocket_2 {
+    width: 25%;
+}
+
+.dsSocketLink::before {
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block !important;
+    margin-right: 7px !important;
+    padding: 2px 3px;
+    vertical-align: middle
+}
+
+#dsSocketGroup::before {
+    content: url('../img/ds_group_b_socket.png');
+}
+
+#dsSocketGroup {
+    margin-top: 0 !important
+}
+
+#dsSocketMolecular::before {
+    content: url('../img/ds_molecular_b_socket.png');
+}
+
+#dsSocketMolecular {
+    margin-bottom: 0 !important
+}
+
+#dsSocket_3 {
+    width: 50%;
+}
+
+#dsFooterLogo {
+    width: 120px;
+
+}
+
+.socket-social {
+    width: 30px;
+    margin-right: 20px
+}
+
+#dsSocket a {
+    cursor: pointer
+}
+
+#dsLogoWrapper {
+    margin-bottom: 20px
+}
+
+#dsSocket_3 {
+    text-align: right
+}
+
+
+@media only screen and ( max-width: 768px ) {
+    #dsSocket, #dsSocketContainer {
+        height: auto;
+        display: block;
+
+    }
+
+    #dsSocket_1, #dsSocket_2, #dsSocket_3 {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center !important
+    }
+}
+
+
+
+/* ---- BULLETS ---- */
+
+#sliderBullets {
+    bottom: 20px;
+    position: absolute;
+    right: 40px;
+    z-index: 1000;
+}
+
+#sliderBullets li {
+    float: left;
+    list-style: none;
+}
+
+#sliderBullets a {
+    border-radius: 5px;
+    background-color: #023A77;
+    display: block;
+    height: 10px;
+    margin-left: 10px;
+    width: 10px;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#sliderBullets a.current {
+    background-color: #29a3dd;
+}
+
+/* --- COVID POPUP --- */
+.covid-popup-wrapper {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    background-color:#fff;
+    border: 10px #003a79 solid;
+    padding: 3rem;
+    width: 50%;
+    max-width: 700px;
+    z-index: 10001
+}
+.covid-popup-wrapper p {
+    margin: 2rem 0;
+}
+.covid-close-popup {
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.covid-popup-wrapper a {
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+
+@media ( max-width: 767px ) {
+    .covid-popup-wrapper p { font-size: 11px }
+}
+@media ( min-width: 768px ) {
+    .covid-popup-wrapper a,
+    .covid-close-popup { min-width: 180px; }
+}
