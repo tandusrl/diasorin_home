@@ -635,10 +635,13 @@ li.menuMobileButton a {
     margin-right: 3rem;
 }
 
+#dsSlide0 span.superscript,
+#dsSlide0c span.superscript,
 #dsSlide3 span.superscript {
     font-size: 16px !important;
     display: inline-block;
     vertical-align: text-top;
+    margin-top: 0;
 }  
 #dsSlide3 .subtitle {
     font-size: 24px !important;
