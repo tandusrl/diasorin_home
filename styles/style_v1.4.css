@@ -585,7 +585,9 @@ li.menuMobileButton a {
     background-image:url('../img/diasorin_trimeric.jpg');
 }
 #dsSlide0 h2 span,
-#dsSlide0c h2 span {
+#dsSlide0c h2 span,
+#dsSlide2 h2 span,
+#dsSlide3 h2 span {
     display: block;
     font-size: 21px !important;
     margin-top: 2rem
@@ -637,18 +639,19 @@ li.menuMobileButton a {
 
 #dsSlide0 span.superscript,
 #dsSlide0c span.superscript,
+#dsSlide2 span.superscript,
 #dsSlide3 span.superscript {
     font-size: 16px !important;
     display: inline-block;
     vertical-align: text-top;
     margin-top: 0;
 }  
-#dsSlide3 .subtitle {
+/* #dsSlide3 .subtitle {
     font-size: 24px !important;
     letter-spacing: 3px;
     display: block;
     margin-top: 20px;
-} 
+}  */
 #dsSlide3 p {
     color: #fff;
 }
@@ -663,6 +666,9 @@ li.menuMobileButton a {
     }
     #dsSlide0 {
         background-position-x: 66%;
+    }
+    .slide--button h2 span {
+        line-height: 22px
     }
 }
 @media ( max-width: 767px ) {
@@ -685,12 +691,11 @@ li.menuMobileButton a {
         margin-right: auto;
         margin-bottom: 1rem
     }
-    .slide--button h2 {
-        line-height: 22px
-    }
+
     #dsSlide0 h2 span,
     #dsSlide0c h2 span,
-    #dsSlide3 h2 .subtitle { font-size: 16px !important }
+    #dsSlide2 h2 span,
+    #dsSlide3 h2 span { font-size: 16px !important }
 }
 
 #dsSlide1 {
@@ -728,17 +733,17 @@ li.menuMobileButton a {
 }
 
 #dsSlide2 {
-    background-image: url('../img/diasorin_slide_2.jpg');
-    background-size: contain;
-    background-color: #e6e6de;
+    background-image: url('../img/diasorin_hev.jpg');
+    background-size: cover;
+    /* background-color: #e6e6de; */
 } 
 
-@media only screen and ( orientation:portrait ) {
+/* @media only screen and ( orientation:portrait ) {
     #dsSlide2 {
         background-image: url('../img/diasorin_slide_2v.jpg');
         margin-top: 100px;
     }  
-}
+} */
 
 @media only screen and ( orientation: portrait ) and (max-width: 425px) {
     #dsSlide2 {
@@ -838,6 +843,7 @@ li.menuMobileButton a {
     #dsSlider h2 {
         text-align: center;
         font-size: 40px !important;
+        line-height: 50px !important;
         margin-top: 30px;
         width: 100%
     }
@@ -845,8 +851,9 @@ li.menuMobileButton a {
 
 @media only screen and ( max-height: 425px ), screen and ( max-width: 425px ) {
     #dsSlider h2 {
-        font-size: 20px !important;
-        margin-top: 0 !important
+        font-size: 30px !important;
+        margin-top: 0 !important;
+        line-height: 40px !important;
     }
     #dsSlider h5 {
         font-size: 8px !important;
