@@ -389,6 +389,13 @@ ul.dsMenuDesktop {
 .dsMolLink span:hover::before {
     content: url('../img/ds_molecular_b.png');
 }
+.dsLumLink span::before {
+    content: url('../img/ds_luminex.png');
+}
+
+.dsLumLink span:hover::before {
+    content: url('../img/ds_luminex_b.png');
+}
 
 @media only screen and ( max-width: 425px ) and ( orientation: portrait ), ( max-height: 425px ) and ( orientation: landscape )  {
     #dsGroupMenu { display: none !important }
@@ -1657,6 +1664,9 @@ img.dsPopupStore {
 
 #dsSocketMolecular::before {
     content: url('../img/ds_molecular_b_socket.png');
+}
+#dsSocketLuminex::before {
+    content: url('../img/ds_luminex_b_socket.png');
 }
 
 #dsSocketMolecular {
