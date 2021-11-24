@@ -632,12 +632,16 @@ li.menuMobileButton a {
     background-position: center;
     background-repeat: no-repeat;
 }
+#dsSlide0_1121 {
+    background-image:url('../img/diasorin_MeMed.jpg');
+}
 #dsSlide0 {
     background-image:url('../img/diasorin_lyme.jpg');
 }
 #dsSlide0c {
     background-image:url('../img/diasorin_trimeric.jpg');
 }
+#dsSlide0_1121 h2 span,
 #dsSlide0 h2 span,
 #dsSlide0c h2 span,
 #dsSlide2 h2 span,
@@ -691,6 +695,7 @@ li.menuMobileButton a {
     margin-right: 3rem;
 }
 
+#dsSlide0_1121 span.superscript,
 #dsSlide0 span.superscript,
 #dsSlide0c span.superscript,
 #dsSlide2 span.superscript,
