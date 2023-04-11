@@ -632,6 +632,18 @@ li.menuMobileButton a {
     background-position: center;
     background-repeat: no-repeat;
 }
+#dsSlide0_0423 {
+    background-image:url('../img/testimonial_hp.jpg');
+}
+#dsSlide0_0423 h2 {
+    color: #000 !important ;
+    text-transform: uppercase;
+}
+#dsSlide0_0423 h2 span:not(.superscript) {
+    display: block;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
 #dsSlide0_1121 {
     background-image:url('../img/diasorin_MeMed.jpg');
 }
@@ -641,6 +653,8 @@ li.menuMobileButton a {
 #dsSlide0c {
     background-image:url('../img/diasorin_trimeric.jpg');
 }
+
+#dsSlide0_0423 h2 span.superscript,
 #dsSlide0_1121 h2 span,
 #dsSlide0 h2 span,
 #dsSlide0c h2 span,
@@ -649,6 +663,18 @@ li.menuMobileButton a {
     display: block;
     font-size: 21px !important;
     margin-top: 2rem
+}
+#dsSlide0_0423 h2 span.superscript {
+    display: inline;
+    vertical-align: top;
+}
+/* #dsSlide0_0423 a {
+    background-color: #000;
+} */
+#dsSlide0_0423 img {
+    max-width: 400px;
+    width: 90%;
+    margin: 0;
 }
 #dsSlide3 {
     background-image:url('../img/diasorin_quantiferon.jpg');
