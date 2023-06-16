@@ -669,6 +669,9 @@ li.menuMobileButton a {
     display: inline;
     vertical-align: top;
 }
+#dsSlide0_0623 h2 {
+    max-width: 100%;
+}
 /* #dsSlide0_0423 a {
     background-color: #000;
 } */
