@@ -659,7 +659,8 @@ li.menuMobileButton a {
 #dsSlide0 h2 span,
 #dsSlide0c h2 span,
 #dsSlide2 h2 span,
-#dsSlide3 h2 span {
+#dsSlide3 h2 span,
+#dsSlide0_0623 h2 span:not(.superscript) {
     display: block;
     font-size: 21px !important;
     margin-top: 2rem
@@ -682,6 +683,9 @@ li.menuMobileButton a {
 }
 #dsSlide0b {
     background-image:url('../img/diasorin_covid_response.jpg');
+}
+#dsSlide0_0623 {
+    background-image:url('../img/MR_proamdvper_carosello_02.jpg');
 }
 
 .slide--button .slide-overlay {
